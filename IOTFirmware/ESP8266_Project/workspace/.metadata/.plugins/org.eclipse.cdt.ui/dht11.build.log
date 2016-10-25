@@ -1,0 +1,26 @@
+11:08:30 **** Incremental Build of configuration Release for project dht11 ****
+"C:\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+Building file: ../.ino.cpp
+Starting C++ compile
+"C:\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega328p -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_NANO -DARDUINO_ARCH_AVR     -I"C:\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.11\cores\arduino" -I"C:\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.11\variants\eightanaloginputs" -I"C:\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.11\libraries\Wire" -I"C:\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.11\libraries\Wire\src" -I"C:\eclipseArduino\arduinoPlugin\libraries\DHT_sensor_library\1.2.3" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
+In file included from ../.ino.cpp:13:0:
+../dht11.ino:23:7: error: no matching function for call to 'DHT::DHT()'
+   DHT dht11d;
+       ^
+../dht11.ino:23:7: note: candidates are:
+In file included from ../.ino.cpp:9:0:
+C:\eclipseArduino\arduinoPlugin\libraries\DHT_sensor_library\1.2.3/DHT.h:40:2: note: DHT::DHT(uint8_t, uint8_t, uint8_t)
+  DHT(uint8_t pin, uint8_t type, uint8_t count=6);
+  ^
+C:\eclipseArduino\arduinoPlugin\libraries\DHT_sensor_library\1.2.3/DHT.h:40:2: note:   candidate expects 3 arguments, 0 provided
+C:\eclipseArduino\arduinoPlugin\libraries\DHT_sensor_library\1.2.3/DHT.h:38:7: note: constexpr DHT::DHT(const DHT&)
+ class DHT {
+       ^
+C:\eclipseArduino\arduinoPlugin\libraries\DHT_sensor_library\1.2.3/DHT.h:38:7: note:   candidate expects 1 argument, 0 provided
+C:\eclipseArduino\arduinoPlugin\libraries\DHT_sensor_library\1.2.3/DHT.h:38:7: note: constexpr DHT::DHT(DHT&&)
+C:\eclipseArduino\arduinoPlugin\libraries\DHT_sensor_library\1.2.3/DHT.h:38:7: note:   candidate expects 1 argument, 0 provided
+subdir.mk:24: recipe for target '.ino.cpp.o' failed
+make: *** [.ino.cpp.o] Error 1
+
+11:08:30 Build Finished (took 293ms)
+

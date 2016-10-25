@@ -1,0 +1,93 @@
+15:40:08 **** Incremental Build of configuration Release for project MQTT_ESP ****
+"C:\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+Building file: ../.ino.cpp
+Starting C++ compile
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/include" "-IC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/lwip/include" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=80000000L  -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_TLS_MEM -DARDUINO=10606 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_ESP8266  -DESP8266   -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\cores\esp8266" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\variants\generic" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\libraries\ESP8266WiFi" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\libraries\ESP8266WiFi\src" -I"C:\eclipseArduino\arduinoPlugin\libraries\MQTT\1.10.0" -I"C:\eclipseArduino\arduinoPlugin\libraries\MQTT\1.10.0\src" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
+In file included from C:\eclipseArduino\arduinoPlugin\libraries\MQTT\1.10.0\src/MQTTClient.h:14:0,
+                 from ../.ino.cpp:9:
+C:\eclipseArduino\arduinoPlugin\libraries\MQTT\1.10.0\src/lib/MQTTClient.h: In member function 'int MQTT::PacketId::getNext()':
+C:\eclipseArduino\arduinoPlugin\libraries\MQTT\1.10.0\src/lib/MQTTClient.h:73:55: warning: operation on '((MQTT::PacketId*)this)->MQTT::PacketId::next' may be undefined [-Wsequence-point]
+         return next = (next == MAX_PACKET_ID) ? 1 : ++next;
+                                                       ^
+Finished building: ../.ino.cpp
+ 
+Starting combiner
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2/bin/xtensa-lx106-elf-gcc" -g -Os -nostdlib -Wl,--no-check-sections -u call_user_start -Wl,-static "-LC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/lib" "-LC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/ld" "-Teagle.flash.4m1m.ld" -Wl,--gc-sections -Wl,-wrap,system_restart_local -Wl,-wrap,register_chipv6_phy  -o "C:/eclipseArduino/workspace/MQTT_ESP/Release/MQTT_ESP.elf" -Wl,--start-group    ./.ino.cpp.o  ./libraries/MQTT/src/lib/MQTTConnectClient.c.o ./libraries/MQTT/src/lib/MQTTDeserializePublish.c.o ./libraries/MQTT/src/lib/MQTTPacket.c.o ./libraries/MQTT/src/lib/MQTTSerializePublish.c.o ./libraries/MQTT/src/lib/MQTTSubscribeClient.c.o ./libraries/MQTT/src/lib/MQTTUnsubscribeClient.c.o  ./libraries/MQTT/src/MQTTClient.cpp.o ./libraries/MQTT/src/Network.cpp.o ./libraries/MQTT/src/Timer.cpp.o ./libraries/MQTT/src/YunMQTTClient.cpp.o  ./libraries/ESP8266WiFi/src/ESP8266WiFi.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiAP.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiGeneric.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiMulti.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiSTA.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiScan.cpp.o ./libraries/ESP8266WiFi/src/WiFiClient.cpp.o ./libraries/ESP8266WiFi/src/WiFiClientSecure.cpp.o ./libraries/ESP8266WiFi/src/WiFiServer.cpp.o ./libraries/ESP8266WiFi/src/WiFiUdp.cpp.o   arduino.ar   "C:/eclipseArduino/workspace/MQTT_ESP/Release/arduino.ar" -lm -lgcc -lhal -lphy -lpp -lnet80211 -lwpa -lcrypto -lmain -lwps -laxtls -lsmartconfig -lmesh -lwpa2 -llwip -Wl,--end-group  "-LC:/eclipseArduino/workspace/MQTT_ESP/Release"
+Finished building: MQTT_ESP.elf
+ 
+Create eeprom image
+Finished building: MQTT_ESP.eep
+ 
+Create Flash image (ihex format)
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\esptool\0.4.8/esptool.exe" -eo "C:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/bootloaders/eboot/eboot.elf" -bo "C:/eclipseArduino/workspace/MQTT_ESP/Release/MQTT_ESP.bin" -bm qio -bf 80 -bz 4M -bs .text -bp 4096 -ec -eo "C:/eclipseArduino/workspace/MQTT_ESP/Release/MQTT_ESP.elf" -bs .irom0.text -bs .text -bs .data -bs .rodata -bc -ec
+Finished building: MQTT_ESP.bin
+ 
+Building target: MQTT_ESP
+Printing size:
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2/bin/xtensa-lx106-elf-size" -A "C:/eclipseArduino/workspace/MQTT_ESP/Release/MQTT_ESP.elf"
+C:/eclipseArduino/workspace/MQTT_ESP/Release/MQTT_ESP.elf  :
+section                                                                                             size         addr
+.data                                                                                                900   1073643520
+.rodata                                                                                             3064   1073644432
+.bss                                                                                               29856   1073647496
+.irom0.text                                                                                       200912   1075843088
+.text                                                                                              28709   1074790400
+.debug_frame                                                                                       27216            0
+.debug_info                                                                                       435549            0
+.debug_abbrev                                                                                      61720            0
+.debug_loc                                                                                        147758            0
+.debug_aranges                                                                                      8080            0
+.debug_ranges                                                                                      16752            0
+.debug_line                                                                                       146238            0
+.debug_str                                                                                         76465            0
+.comment                                                                                            8920            0
+.xtensa.info                                                                                          56            0
+.xt.lit._ZN4MQTT6ClientI7Network5TimerLi128ELi0EE10sendPacketEiRS2_                                    0            0
+.xt.lit._ZN4MQTT6ClientI7Network5TimerLi128ELi0EE10disconnectEv                                        0            0
+.xt.lit._ZN4MQTT6ClientI7Network5TimerLi128ELi0EE7publishEPKcPvjRtNS_3QoSEb                            0            0
+.xt.lit._ZN4MQTT6ClientI7Network5TimerLi128ELi0EE10readPacketERS2_                                     0            0
+.xt.lit._ZN4MQTT6ClientI7Network5TimerLi128ELi0EE9keepaliveEv                                          0            0
+.xt.lit._ZN4MQTT6ClientI7Network5TimerLi128ELi0EE5cycleERS2_                                           0            0
+.xt.lit._ZN4MQTT6ClientI7Network5TimerLi128ELi0EE7waitforEiRS2_                                        0            0
+.xt.lit._ZN4MQTT6ClientI7Network5TimerLi128ELi0EE9subscribeEPKcNS_3QoSEPFvRNS_11MessageDataEE          8            0
+.xt.prop._ZN4MQTT6ClientI7Network5TimerLi128ELi0EE10sendPacketEiRS2_                                 156            0
+.xt.prop._ZN4MQTT6ClientI7Network5TimerLi128ELi0EE10disconnectEv                                      60            0
+.xt.prop._ZN4MQTT6ClientI7Network5TimerLi128ELi0EE7publishEPKcPvjRtNS_3QoSEb                          72            0
+.xt.prop._ZN4MQTT6ClientI7Network5TimerLi128ELi0EE10readPacketERS2_                                  156            0
+.xt.prop._ZN4MQTT6ClientI7Network5TimerLi128ELi0EE14deliverMessageER10MQTTStringRNS_7MessageE        144            0
+.xt.prop._ZN4MQTT6ClientI7Network5TimerLi128ELi0EE9keepaliveEv                                       108            0
+.xt.prop._ZN4MQTT6ClientI7Network5TimerLi128ELi0EE5cycleERS2_                                         84            0
+.xt.prop._ZN4MQTT6ClientI7Network5TimerLi128ELi0EE7waitforEiRS2_                                      48            0
+.xt.prop._ZN4MQTT6ClientI7Network5TimerLi128ELi0EE9subscribeEPKcNS_3QoSEPFvRNS_11MessageDataEE        96            0
+.xt.lit._ZN13ClientContext8_s_errorEPva                                                                8            0
+.xt.lit._ZN13ClientContext7_s_sentEPvP7tcp_pcbt                                                        8            0
+.xt.lit._ZN13ClientContext7_s_recvEPvP7tcp_pcbP4pbufa                                                  8            0
+.xt.lit._ZN13ClientContext5flushEv                                                                     0            0
+.xt.lit._ZN13ClientContext5unrefEv                                                                     8            0
+.xt.lit._ZN13ClientContext5writeEPKcj                                                                  8            0
+.xt.lit._ZN13ClientContext8_consumeEj                                                                  8            0
+.xt.prop._ZN6Stream9readBytesEPhj                                                                     36            0
+.xt.prop._ZN13ClientContext8_s_errorEPva                                                              36            0
+.xt.prop._ZN13ClientContext7_s_sentEPvP7tcp_pcbt                                                      36            0
+.xt.prop._ZN13ClientContext7_s_recvEPvP7tcp_pcbP4pbufa                                                96            0
+.xt.prop._ZN13ClientContext5flushEv                                                                   60            0
+.xt.prop._ZN13ClientContext5unrefEv                                                                   60            0
+.xt.prop._ZN13ClientContext5writeEPKcj                                                                72            0
+.xt.prop._ZN13ClientContext8_consumeEj                                                                96            0
+.xt.prop._ZTV10WiFiClient                                                                             12            0
+.xt.lit._ZN14HardwareSerialD2Ev                                                                        8            0
+.xt.lit._ZN14HardwareSerialD0Ev                                                                        0            0
+.xt.prop._ZN14HardwareSerialD2Ev                                                                      36            0
+.xt.prop._ZN14HardwareSerialD0Ev                                                                      36            0
+.xt.prop._ZTV14HardwareSerial                                                                         12            0
+.xt.prop._ZTV9IPAddress                                                                               12            0
+.xt.lit._ZN5Print5writeEPKc                                                                            0            0
+.xt.prop._ZN5Print5writeEPKc                                                                          48            0
+Total                                                                                            1193831
+
+
+Finished building target: MQTT_ESP
+ 
+
+15:40:11 Build Finished (took 2s.821ms)
+

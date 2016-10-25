@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/nav_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/tab_icon"
+        android:layout_alignParentTop="true">
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/nav_header_container"
+        android:layout_above="@+id/linearLayout"
+        android:background="#f5d753">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/drawerList"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:background="@color/color9" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout">
+        <View
+            android:id="@+id/divider1"
+            style="@style/Divider"
+            android:background="@color/color1" />
+
+
+        <TextView
+            android:id="@+id/action_add_connection"
+            android:layout_width="fill_parent"
+            android:layout_height="33dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/color1"
+            android:text="@string/action_add_connection"
+            android:drawableLeft="@drawable/ic_cloud_done_dark"
+            android:background="#40cea6"
+            android:textAlignment="center"
+            android:editable="true" />
+
+
+        <TextView
+            android:id="@+id/action_help"
+            android:layout_width="fill_parent"
+            android:layout_height="33dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/color1"
+            android:text="@string/help_and_feedback"
+            android:drawableLeft="@drawable/ic_help"
+            android:background="@color/accent_material_light"
+            android:editable="false" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "D:\\Working\\IOT\\IOT_Software\\Radial-Menu-Widget-Android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_contact.xml",
+        "source": "D:\\Working\\IOT\\IOT_Software\\Radial-Menu-Widget-Android\\app\\src\\main\\res\\layout\\layout_contact.xml"
+    },
+    {
+        "merged": "D:\\Working\\IOT\\IOT_Software\\Radial-Menu-Widget-Android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_holder.xml",
+        "source": "D:\\Working\\IOT\\IOT_Software\\Radial-Menu-Widget-Android\\app\\src\\main\\res\\layout\\layout_holder.xml"
+    },
+    {
+        "merged": "D:\\Working\\IOT\\IOT_Software\\Radial-Menu-Widget-Android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_semi_circular_radial_menu.xml",
+        "source": "D:\\Working\\IOT\\IOT_Software\\Radial-Menu-Widget-Android\\app\\src\\main\\res\\layout\\activity_semi_circular_radial_menu.xml"
+    },
+    {
+        "merged": "D:\\Working\\IOT\\IOT_Software\\Radial-Menu-Widget-Android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_about.xml",
+        "source": "D:\\Working\\IOT\\IOT_Software\\Radial-Menu-Widget-Android\\app\\src\\main\\res\\layout\\layout_about.xml"
+    },
+    {
+        "merged": "D:\\Working\\IOT\\IOT_Software\\Radial-Menu-Widget-Android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_appbar.xml",
+        "source": "D:\\Working\\IOT\\IOT_Software\\Radial-Menu-Widget-Android\\app\\src\\main\\res\\layout\\layout_appbar.xml"
+    },
+    {
+        "merged": "D:\\Working\\IOT\\IOT_Software\\Radial-Menu-Widget-Android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_main.xml",
+        "source": "D:\\Working\\IOT\\IOT_Software\\Radial-Menu-Widget-Android\\app\\src\\main\\res\\layout\\layout_main.xml"
+    },
+    {
+        "merged": "D:\\Working\\IOT\\IOT_Software\\Radial-Menu-Widget-Android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_radial.xml",
+        "source": "D:\\Working\\IOT\\IOT_Software\\Radial-Menu-Widget-Android\\app\\src\\main\\res\\layout\\activity_radial.xml"
+    },
+    {
+        "merged": "D:\\Working\\IOT\\IOT_Software\\Radial-Menu-Widget-Android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_radial_progress.xml",
+        "source": "D:\\Working\\IOT\\IOT_Software\\Radial-Menu-Widget-Android\\app\\src\\main\\res\\layout\\activity_radial_progress.xml"
+    }
+]

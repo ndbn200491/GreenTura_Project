@@ -1,0 +1,17 @@
+714=3
+Automatically\ import\ libraries=true
+Board=Adafruit HUZZAH ESP8266
+Board\ custom\ option\ selections=Flash Mode\=\nProcessor\=\nFlash Frequency\=\nUpload Using\=\nCPU Frequency\=80 MHz\nFlash Size\=4M (3M SPIFFS)\nDebug port\=\nDebug Level\=\nReset Method\=\nModule\=\nUpload Speed\=115200
+Boards\ file=D\:\\Download\\V3.1_win64.2016-08-03_16-31-05\\sloeber\\arduinoPlugin\\packages\\esp8266\\hardware\\esp8266\\2.1.0\\boards.txt
+Build\ before\ upload\ option=ASK
+FuStatub=14
+FuStatus=1
+JANTJE.TEMPLATE_FOLDER=
+JANTJE.TEMPLATE_USE_DEFAULT=3
+Last\ used\ Examples=D\:/Download/V3.1_win64.2016-08-03_16-31-05/sloeber/arduinoPlugin/packages/esp8266/hardware/esp8266/2.1.0/libraries/ESP8266HTTPClient/examples/BasicHttpClient
+Open\ serial\ connections\ with\ the\ monitor=true
+Private\ Library\ Path=C\:/Users/VSKYLINE/Arduino/libraries
+Private\ hardware\ Path=C\:/Users/VSKYLINE/Arduino/hardware
+UPLOAD.PROTOCOL=Default
+Upload\ port=COM2
+eclipse.preferences.version=1

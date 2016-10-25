@@ -1,0 +1,61 @@
+13:20:21 **** Incremental Build of configuration Release for project test1 ****
+"C:\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+Building target: test1
+Printing size:
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2/bin/xtensa-lx106-elf-size" -A "C:/eclipseArduino/workspace/test1/Release/test1.elf"
+C:/eclipseArduino/workspace/test1/Release/test1.elf  :
+section                                                                                                                size         addr
+.data                                                                                                                   892   1073643520
+.rodata                                                                                                                4016   1073644416
+.bss                                                                                                                  29864   1073648432
+.irom0.text                                                                                                          201664   1075843088
+.text                                                                                                                 28709   1074790400
+.debug_frame                                                                                                          25056            0
+.debug_info                                                                                                          427539            0
+.debug_abbrev                                                                                                         58694            0
+.debug_loc                                                                                                           136521            0
+.debug_aranges                                                                                                         7328            0
+.debug_ranges                                                                                                         15856            0
+.debug_line                                                                                                          139610            0
+.debug_str                                                                                                            74279            0
+.comment                                                                                                               8920            0
+.xtensa.info                                                                                                             56            0
+.xt.lit._ZNSt17_Function_handlerIF6StringS0_EPS1_E9_M_invokeERKSt9_Any_dataS0_                                            0            0
+.xt.prop._ZNSt14_Function_base13_Base_managerIPF6StringS1_EE10_M_managerERSt9_Any_dataRKS5_St18_Manager_operation        72            0
+.xt.prop._ZNSt17_Function_handlerIF6StringS0_EPS1_E9_M_invokeERKSt9_Any_dataS0_                                          36            0
+.xt.prop._ZNSt14_Function_baseD2Ev                                                                                       36            0
+.xt.lit._ZNKSt8functionIF6StringS0_EEclES0_                                                                               0            0
+.xt.prop._ZNKSt8functionIF6StringS0_EEclES0_                                                                             48            0
+.xt.lit._ZN13ClientContext8_s_errorEPva                                                                                   8            0
+.xt.lit._ZN13ClientContext7_s_sentEPvP7tcp_pcbt                                                                           8            0
+.xt.lit._ZN13ClientContext7_s_recvEPvP7tcp_pcbP4pbufa                                                                     8            0
+.xt.lit._ZN13ClientContext5flushEv                                                                                        0            0
+.xt.lit._ZN13ClientContext5unrefEv                                                                                        8            0
+.xt.lit._ZN13ClientContext5writeEPKcj                                                                                     8            0
+.xt.lit._ZN13ClientContext8_consumeEj                                                                                     8            0
+.xt.prop._ZN6Stream9readBytesEPhj                                                                                        36            0
+.xt.prop._ZN13ClientContext8_s_errorEPva                                                                                 36            0
+.xt.prop._ZN13ClientContext7_s_sentEPvP7tcp_pcbt                                                                         36            0
+.xt.prop._ZN13ClientContext7_s_recvEPvP7tcp_pcbP4pbufa                                                                   96            0
+.xt.prop._ZN13ClientContext5flushEv                                                                                      60            0
+.xt.prop._ZN13ClientContext5unrefEv                                                                                      60            0
+.xt.prop._ZN13ClientContext5writeEPKcj                                                                                   72            0
+.xt.prop._ZN13ClientContext8_consumeEj                                                                                   96            0
+.xt.prop._ZTV10WiFiClient                                                                                                12            0
+.xt.prop._ZTV10WiFiServer                                                                                                12            0
+.xt.lit._ZN14HardwareSerialD2Ev                                                                                           8            0
+.xt.lit._ZN14HardwareSerialD0Ev                                                                                           0            0
+.xt.prop._ZN14HardwareSerialD2Ev                                                                                         36            0
+.xt.prop._ZN14HardwareSerialD0Ev                                                                                         36            0
+.xt.prop._ZTV14HardwareSerial                                                                                            12            0
+.xt.prop._ZTV9IPAddress                                                                                                  12            0
+.xt.lit._ZN5Print5writeEPKc                                                                                               0            0
+.xt.prop._ZN5Print5writeEPKc                                                                                             48            0
+Total                                                                                                               1159912
+
+
+Finished building target: test1
+ 
+
+13:20:21 Build Finished (took 521ms)
+

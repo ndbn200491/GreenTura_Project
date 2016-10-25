@@ -1,0 +1,28 @@
+13:48:14 **** Build of configuration Release for project BlinkWithoutDelay ****
+"C:\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+Building file: ../.ino.cpp
+Starting C++ compile
+"C:\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR     -I"C:\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.11\cores\arduino" -I"C:\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.11\variants\mega" -I"C:\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.11\libraries\SPI" -I"C:\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.11\libraries\SPI\src" -I"C:\eclipseArduino\arduinoPlugin\libraries\PubSubClient\2.6.0" -I"C:\eclipseArduino\arduinoPlugin\libraries\PubSubClient\2.6.0\src" -I"C:\eclipseArduino\arduinoPlugin\libraries\Ethernet\1.1.1" -I"C:\eclipseArduino\arduinoPlugin\libraries\Ethernet\1.1.1\src" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
+In file included from ../.ino.cpp:19:0:
+../mqtt_auth.ino: In function 'void setup()':
+../mqtt_auth.ino:26:6: error: redefinition of 'void setup()'
+ void setup()
+      ^
+In file included from ../.ino.cpp:17:0:
+../BlinkWithoutDelay.ino:38:6: error: 'void setup()' previously defined here
+ void setup() {
+      ^
+In file included from ../.ino.cpp:19:0:
+../mqtt_auth.ino: In function 'void loop()':
+../mqtt_auth.ino:40:6: error: redefinition of 'void loop()'
+ void loop()
+      ^
+In file included from ../.ino.cpp:17:0:
+../BlinkWithoutDelay.ino:43:6: error: 'void loop()' previously defined here
+ void loop() {
+      ^
+subdir.mk:26: recipe for target '.ino.cpp.o' failed
+make: *** [.ino.cpp.o] Error 1
+
+13:48:15 Build Finished (took 473ms)
+

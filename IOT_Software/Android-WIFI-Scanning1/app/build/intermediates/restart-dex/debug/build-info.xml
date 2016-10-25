@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="17"
+    density="xxhdpi"
+    format="7"
+    timestamp="30091533346291"
+    token="-4933457770912591587" >
+
+    <task
+        name="javac"
+        duration="0" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="0" />
+    <task
+        name="verifier"
+        duration="0" />
+
+    <artifact
+        location="D:\Working\IOT\IOT_Software\Android-WIFI-Scanning1\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="30091533346291" >
+        <artifact
+            location="D:\Working\IOT\IOT_Software\Android-WIFI-Scanning1\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

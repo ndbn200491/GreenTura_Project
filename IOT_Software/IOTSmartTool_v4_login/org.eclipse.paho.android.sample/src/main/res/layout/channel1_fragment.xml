@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="800dp"
+    android:layout_marginTop="56dp">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chan1scrollView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="TRẠNG THÁI BƠM HỒI LƯU"
+            android:id="@+id/ch1TextView1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/abc_primary_text_disable_only_material_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="ĐỒNG HỒ:"
+            android:id="@+id/textView26"
+            android:layout_below="@+id/ch1TextView1"
+            android:layout_alignLeft="@+id/ch1TextView1"
+            android:layout_alignStart="@+id/ch1TextView1"
+            android:layout_marginLeft="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/abc_primary_text_disable_only_material_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="TRẠNG THÁI:"
+            android:id="@+id/textView27"
+            android:layout_below="@+id/textView26"
+            android:layout_alignLeft="@+id/textView26"
+            android:layout_alignStart="@+id/textView26"
+            android:textStyle="bold"
+            android:textColor="@color/abc_primary_text_disable_only_material_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="MỐC KẾ TIẾP:"
+            android:id="@+id/textView28"
+            android:layout_below="@+id/textView27"
+            android:layout_alignLeft="@+id/textView27"
+            android:layout_alignStart="@+id/textView27"
+            android:textStyle="bold"
+            android:textColor="@color/abc_primary_text_disable_only_material_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="00:00:00"
+            android:id="@+id/textView29"
+            android:textColor="@color/abc_primary_text_disable_only_material_light"
+            android:layout_above="@+id/textView27"
+            android:layout_toRightOf="@+id/textView32"
+            android:layout_toEndOf="@+id/textView32"
+            android:layout_marginLeft="51dp"
+            android:layout_marginStart="51dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="TẮT"
+            android:id="@+id/textView30"
+            android:textColor="@color/abc_primary_text_disable_only_material_light"
+            android:layout_below="@+id/textView29"
+            android:layout_alignLeft="@+id/textView29"
+            android:layout_alignStart="@+id/textView29" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="00:00:00"
+            android:id="@+id/textView31"
+            android:textColor="@color/abc_primary_text_disable_only_material_light"
+            android:layout_alignLeft="@+id/textView30"
+            android:layout_alignStart="@+id/textView30"
+            android:layout_above="@+id/textView32"
+            android:layout_alignRight="@+id/textView29"
+            android:layout_alignEnd="@+id/textView29" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:id="@+id/switch1"
+            android:checked="false"
+            android:layout_above="@+id/textView31"
+            android:layout_toRightOf="@+id/textView31"
+            android:layout_toEndOf="@+id/textView31"
+            android:layout_alignTop="@+id/textView30" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHẾ ĐỘ CHẠY:"
+            android:id="@+id/textView32"
+            android:textColor="@color/abc_primary_text_disable_only_material_light"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_below="@+id/textView28"
+            android:layout_alignLeft="@+id/ch1TextView1"
+            android:layout_alignStart="@+id/ch1TextView1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="channel1"
+            android:id="@+id/txChan1"
+            android:layout_below="@+id/textView32"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

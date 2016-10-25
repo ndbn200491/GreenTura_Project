@@ -1,0 +1,6 @@
+10:43:45 **** Incremental Build of configuration Release for project ESP8266_PHPpage ****
+"C:\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+make: *** No rule to make target '../.ino.cpp', needed by '.ino.cpp.o'.  Stop.
+
+10:43:46 Build Finished (took 323ms)
+

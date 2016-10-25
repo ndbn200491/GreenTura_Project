@@ -1,0 +1,89 @@
+14:51:03 **** Incremental Build of configuration Release for project ThingSpeaking ****
+"C:\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+Building file: C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp
+Starting C++ compile
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/include" "-IC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/lwip/include" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=80000000L  -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_TLS_MEM -DARDUINO=10606 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_ESP8266  -DESP8266   -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\cores\esp8266" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\variants\generic" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\libraries\SPI" -I"C:\eclipseArduino\arduinoPlugin\libraries\ThingSpeak\1.1.1" -I"C:\eclipseArduino\arduinoPlugin\libraries\ThingSpeak\1.1.1\src" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\libraries\ESP8266WiFi" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\libraries\ESP8266WiFi\src" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\libraries\Ethernet" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\libraries\Ethernet\src" -I"C:\eclipseArduino\arduinoPlugin\libraries\WiFi\1.2.6" -I"C:\eclipseArduino\arduinoPlugin\libraries\WiFi\1.2.6\src" -I"C:\eclipseArduino\arduinoPlugin\libraries\Bridge" -I"C:\eclipseArduino\arduinoPlugin\libraries\Bridge\src" -MMD -MP -MF"libraries/WiFi/src/WiFiUdp.cpp.d" -MT"libraries/WiFi/src/WiFiUdp.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp"  -o  "libraries/WiFi/src/WiFiUdp.cpp.o"   -Wall
+In file included from C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp:29:0:
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.h:25:0: warning: "UDP_TX_PACKET_MAX_SIZE" redefined [enabled by default]
+ #define UDP_TX_PACKET_MAX_SIZE 24
+ ^
+In file included from C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/utility/wifi_drv.h:26:0,
+                 from C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp:26:
+C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\libraries\ESP8266WiFi\src/WiFiUdp.h:28:0: note: this is the location of the previous definition
+ #define UDP_TX_PACKET_MAX_SIZE 8192
+ ^
+In file included from C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp:29:0:
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.h:27:7: error: redefinition of 'class WiFiUDP'
+ class WiFiUDP : public UDP {
+       ^
+In file included from C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/utility/wifi_drv.h:26:0,
+                 from C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp:26:
+C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\libraries\ESP8266WiFi\src/WiFiUdp.h:32:7: error: previous definition of 'class WiFiUDP'
+ class WiFiUDP : public UDP, public SList<WiFiUDP> {
+       ^
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp: In constructor 'WiFiUDP::WiFiUDP()':
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp:35:22: error: class 'WiFiUDP' does not have any field named '_sock'
+ WiFiUDP::WiFiUDP() : _sock(NO_SOCKET_AVAIL) {}
+                      ^
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp: In member function 'virtual uint8_t WiFiUDP::begin(uint16_t)':
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp:45:9: error: '_sock' was not declared in this scope
+         _sock = sock;
+         ^
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp:46:9: error: '_port' was not declared in this scope
+         _port = port;
+         ^
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp: In member function 'virtual int WiFiUDP::available()':
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp:56:7: error: '_sock' was not declared in this scope
+   if (_sock != NO_SOCKET_AVAIL)
+       ^
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp: In member function 'virtual void WiFiUDP::stop()':
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp:66:8: error: '_sock' was not declared in this scope
+    if (_sock == NO_SOCKET_AVAIL)
+        ^
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp:69:26: error: '_sock' was not declared in this scope
+    ServerDrv::stopClient(_sock);
+                          ^
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp: In member function 'virtual int WiFiUDP::beginPacket(IPAddress, uint16_t)':
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp:88:7: error: '_sock' was not declared in this scope
+   if (_sock == NO_SOCKET_AVAIL)
+       ^
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp:90:7: error: '_sock' was not declared in this scope
+   if (_sock != NO_SOCKET_AVAIL)
+       ^
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp: In member function 'virtual int WiFiUDP::endPacket()':
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp:101:32: error: '_sock' was not declared in this scope
+  return ServerDrv::sendUdpData(_sock);
+                                ^
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp: In member function 'virtual size_t WiFiUDP::write(const uint8_t*, size_t)':
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp:111:27: error: '_sock' was not declared in this scope
+  ServerDrv::insertDataBuf(_sock, buffer, size);
+                           ^
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp: In member function 'virtual int WiFiUDP::read()':
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp:125:23: error: '_sock' was not declared in this scope
+    ServerDrv::getData(_sock, &b);
+                       ^
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp: In member function 'virtual int WiFiUDP::read(unsigned char*, size_t)':
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp:137:31: error: '_sock' was not declared in this scope
+    if (!ServerDrv::getDataBuf(_sock, buffer, &size))
+                               ^
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp: In member function 'virtual int WiFiUDP::peek()':
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp:152:22: error: '_sock' was not declared in this scope
+   ServerDrv::getData(_sock, &b, 1);
+                      ^
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp: In member function 'virtual IPAddress WiFiUDP::remoteIP()':
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp:167:25: error: '_sock' was not declared in this scope
+  WiFiDrv::getRemoteData(_sock, _remoteIp, _remotePort);
+                         ^
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp: In member function 'virtual uint16_t WiFiUDP::remotePort()':
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp:177:25: error: '_sock' was not declared in this scope
+  WiFiDrv::getRemoteData(_sock, _remoteIp, _remotePort);
+                         ^
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp: In member function 'virtual int WiFiUDP::endPacket()':
+C:/eclipseArduino/arduinoPlugin/libraries/WiFi/1.2.6/src/WiFiUdp.cpp:102:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+libraries/WiFi/src/subdir.mk:48: recipe for target 'libraries/WiFi/src/WiFiUdp.cpp.o' failed
+make: *** [libraries/WiFi/src/WiFiUdp.cpp.o] Error 1
+
+14:51:04 Build Finished (took 1s.128ms)
+

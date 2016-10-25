@@ -1,0 +1,44 @@
+08:49:40 **** Incremental Build of configuration Release for project TestEc ****
+"C:\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+Building file: ../.ino.cpp
+Starting C++ compile
+"C:\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-g++" -c -g -Os -std=gnu++11 -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -mmcu=atmega2560 -DF_CPU=16000000L -DARDUINO=10606 -DARDUINO_AVR_MEGA2560 -DARDUINO_ARCH_AVR     -I"C:\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.11\cores\arduino" -I"C:\eclipseArduino\arduinoPlugin\packages\arduino\hardware\avr\1.6.11\variants\mega" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
+Finished building: ../.ino.cpp
+ 
+Starting combiner
+"C:\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-gcc" -Os -Wl,--gc-sections,--relax -mmcu=atmega2560  -o "D:/Working/IOT/IOTFirmware/Greentura_Proj/TestEc/Release/TestEc.elf"    ./.ino.cpp.o   arduino.ar     "-LD:/Working/IOT/IOTFirmware/Greentura_Proj/TestEc/Release" -lm
+Finished building: TestEc.elf
+ 
+Create eeprom image
+"C:\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0  "D:/Working/IOT/IOTFirmware/Greentura_Proj/TestEc/Release/TestEc.elf" "D:/Working/IOT/IOTFirmware/Greentura_Proj/TestEc/Release/TestEc.eep"
+Finished building: TestEc.eep
+ 
+Create Flash image (ihex format)
+"C:\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-objcopy" -O ihex -R .eeprom  "D:/Working/IOT/IOTFirmware/Greentura_Proj/TestEc/Release/TestEc.elf" "D:/Working/IOT/IOTFirmware/Greentura_Proj/TestEc/Release/TestEc.hex"
+Finished building: TestEc.hex
+ 
+Building target: TestEc
+Printing size:
+"C:\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "D:/Working/IOT/IOTFirmware/Greentura_Proj/TestEc/Release/TestEc.elf"
+D:/Working/IOT/IOTFirmware/Greentura_Proj/TestEc/Release/TestEc.elf  :
+section            size      addr
+.data                30   8389120
+.text              6532         0
+.bss                174   8389150
+.comment             17         0
+.debug_aranges     1424         0
+.debug_info       51975         0
+.debug_abbrev      6789         0
+.debug_line        8258         0
+.debug_frame       4712         0
+.debug_str         8356         0
+.debug_loc        28877         0
+.debug_ranges      1472         0
+Total            118616
+
+
+Finished building target: TestEc
+ 
+
+08:49:41 Build Finished (took 710ms)
+

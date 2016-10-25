@@ -1,0 +1,116 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="6dip" >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:id="@+id/control"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dip"
+        android:src="@drawable/ic_topic" />
+
+    <TextView
+        android:id="@+id/qos_label"
+        android:layout_width="100dip"
+        android:layout_height="26dip"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/icon"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="@string/qos_text"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/show_notifications_label"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/qos_label"
+        android:text="@string/notify_text"
+         />
+
+    <TextView
+        android:id="@+id/tim1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@id/icon"
+        android:gravity="center_vertical"
+        android:text="@string/topic_label"
+        android:textSize="16sp" />
+
+
+    <ImageView
+        android:id="@+id/topic_delete_image"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="6dip"
+        android:src="@drawable/ic_delete"
+        android:layout_alignEnd="@+id/tim1"
+        android:layout_alignParentRight="true" />
+
+
+</RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_below="@id/control"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="6dip" >
+        <TextView
+            android:id="@+id/timerController"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timer Controller"
+            android:textSize="20dp"
+            android:textColor="@color/color2"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/time1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/timerController"
+            android:layout_marginLeft="0dp"
+            android:textColor="@color/color2"
+            android:textSize="15dp"
+            android:text="Timer1"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/time1"
+            android:layout_marginLeft="0dp"
+            android:textColor="@color/color2"
+            android:textSize="15dp"
+            android:text="Timer2"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/time3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/time2"
+            android:layout_marginLeft="0dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp"
+            android:text="Timer3"
+            android:textStyle="bold"
+            />
+
+
+    </RelativeLayout>
+</RelativeLayout>

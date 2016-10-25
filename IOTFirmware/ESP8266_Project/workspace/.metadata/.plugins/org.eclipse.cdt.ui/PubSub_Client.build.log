@@ -1,0 +1,19 @@
+23:41:16 **** Incremental Build of configuration Release for project PubSub_Client ****
+"C:\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+Building file: ../.ino.cpp
+Starting C++ compile
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/include" "-IC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/lwip/include" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=80000000L    -DARDUINO=10606 -DARDUINO_ESP8266_ESP12 -DARDUINO_ARCH_ESP8266  -DESP8266   -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\cores\esp8266" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\variants\adafruit" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\libraries\Wire" -I"C:\eclipseArduino\arduinoPlugin\libraries\PubSubClient\2.6.0" -I"C:\eclipseArduino\arduinoPlugin\libraries\PubSubClient\2.6.0\src" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\libraries\ESP8266WiFi" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\libraries\ESP8266WiFi\src" -I"C:\eclipseArduino\arduinoPlugin\libraries\Adafruit_HDC1000_Library\1.0.1" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
+In file included from ../PubSub_Client.ino:4:0,
+                 from ../.ino.cpp:18:
+C:\eclipseArduino\arduinoPlugin\libraries\Adafruit_HDC1000_Library\1.0.1/Adafruit_HDC1000.h:46:7: error: redefinition of 'class Adafruit_HDC1000'
+ class Adafruit_HDC1000 {
+       ^
+In file included from ../.ino.cpp:11:0:
+C:\eclipseArduino\arduinoPlugin\libraries\Adafruit_HDC1000_Library\1.0.1/Adafruit_HDC1000.h:46:7: error: previous definition of 'class Adafruit_HDC1000'
+ class Adafruit_HDC1000 {
+       ^
+subdir.mk:24: recipe for target '.ino.cpp.o' failed
+make: *** [.ino.cpp.o] Error 1
+
+23:41:17 Build Finished (took 619ms)
+

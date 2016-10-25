@@ -1,0 +1,245 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.eclipse.paho.android.sample.activity.MessagesFragment"
+    android:layout_marginTop="56dp"
+    >
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:id="@+id/subscription_list_view"
+        android:layout_below="@+id/label"
+        android:textSize="20dp"
+
+        android:cacheColorHint="@color/color2"
+        android:layout_marginTop="0dp"
+        android:choiceMode="singleChoice"
+        android:layout_alignBottom="@+id/progressBar" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time 00:00"
+        android:textColor="@color/color6"
+        android:id="@+id/timeData"
+        android:background="@color/color2"
+        android:textSize="15dp"
+
+        android:layout_below="@+id/subscription_list_view"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp" />
+
+    <View
+        android:id="@+id/divider1"
+        style="@style/Divider"
+        android:layout_below="@+id/subscription_list_view" /> <!-- *************************************************************************-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sensor Data:"
+        android:background="@color/color2"
+        android:textColor="@color/bright_foreground_material_light"
+        android:id="@+id/textView8"
+
+        android:layout_below="@+id/subscription_list_view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_marginLeft="10dp"
+        android:textSize="30dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="........(%)"
+        android:id="@+id/humiData"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/humiDatadsds"
+        android:layout_alignTop="@+id/humiDatadsds"
+        android:layout_toRightOf="@+id/textView7"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp" />
+
+    <View
+        android:id="@+id/divider2"
+        style="@style/Divider"
+        android:layout_below="@+id/textView8"
+        android:layout_marginLeft="10dp" /> <!-- *************************************************************************-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Setup"
+        android:id="@+id/subscribe_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Humidity:"
+        android:textSize="20dp"
+        android:id="@+id/humiDatadsds"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="........(C degree)"
+        android:id="@+id/tempData"
+        android:textSize="20dp"
+        android:layout_above="@+id/divider4"
+        android:layout_alignLeft="@+id/humiData"
+        android:layout_alignStart="@+id/humiData"
+        android:layout_below="@+id/divider3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp" />
+
+    <View
+        android:id="@+id/divider3"
+        style="@style/Divider"
+        android:layout_below="@+id/humiDatadsds"
+        android:layout_marginLeft="10dp" /> <!-- *************************************************************************-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Temp:"
+        android:textSize="20dp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/humiDatadsds"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="........(+/-)"
+        android:textSize="20dp"
+        android:id="@+id/PHData"
+        android:layout_below="@+id/tempData"
+        android:layout_alignLeft="@+id/tempData"
+        android:layout_alignStart="@+id/tempData"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toStartOf="@+id/timeData"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp" />
+
+    <View
+        android:id="@+id/divider4"
+        style="@style/Divider"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="10dp" /> <!-- *************************************************************************-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="PH+/-:"
+        android:textSize="20dp"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+    <View
+        android:id="@+id/divider5"
+        style="@style/Divider"
+        android:layout_below="@+id/textView4"
+        android:layout_marginLeft="10dp" /> <!-- *************************************************************************-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Some others Info:........................"
+        android:textSize="18dp"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp" />
+    <View
+        android:id="@+id/divider6"
+        style="@style/Divider"
+        android:layout_below="@+id/textView5"
+        android:layout_marginLeft="10dp" /> <!-- *************************************************************************-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Explain &amp; recomend for user:..............................................................."
+        android:textSize="18dp"
+        android:background="@color/shadow_2"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="74dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    <View
+        android:id="@+id/divider7"
+        style="@style/Divider"
+        android:layout_below="@+id/textView6"
+        android:layout_marginLeft="10dp" /> <!-- *************************************************************************-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Exclusion Status:"
+        android:textSize="20dp"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK (or not ok)"
+        android:id="@+id/checkBox"
+        android:checked="false"
+        android:layout_below="@+id/textView5"
+        android:layout_toRightOf="@+id/subscribe_button"
+        android:layout_toEndOf="@+id/subscribe_button" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Refresh"
+        android:id="@+id/btnRefresh"
+        android:layout_below="@+id/timeData"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_alignBottom="@+id/divider2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="7dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+         />
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+09:20:43 **** Incremental Build of configuration Release for project ESP8266_relay_switch_MQTT ****
+"C:\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+Starting combiner
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2/bin/xtensa-lx106-elf-gcc" -g -Os -nostdlib -Wl,--no-check-sections -u call_user_start -Wl,-static "-LC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/lib" "-LC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/ld" "-Teagle.flash.4m1m.ld" -Wl,--gc-sections -Wl,-wrap,system_restart_local -Wl,-wrap,register_chipv6_phy  -o "C:/eclipseArduino/Project/EasyIoT-Cloud/ESP8266_relay_switch_MQTT/Release/ESP8266_relay_switch_MQTT.elf" -Wl,--start-group    ./.ino.cpp.o  ./libraries/ESP8266WiFi/src/ESP8266WiFi.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiAP.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiGeneric.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiMulti.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiSTA.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiScan.cpp.o ./libraries/ESP8266WiFi/src/WiFiClient.cpp.o ./libraries/ESP8266WiFi/src/WiFiClientSecure.cpp.o ./libraries/ESP8266WiFi/src/WiFiServer.cpp.o ./libraries/ESP8266WiFi/src/WiFiUdp.cpp.o  ./libraries/EEPROM/EEPROM.cpp.o  ./esp-mqtt/src/mqtt/mqtt.c.o ./esp-mqtt/src/mqtt/mqtt_msg.c.o ./esp-mqtt/src/mqtt/proto.c.o ./esp-mqtt/src/mqtt/queue.c.o ./esp-mqtt/src/mqtt/ringbuf.c.o ./esp-mqtt/src/mqtt/utils.c.o  ./esp-mqtt/src/MQTT.cpp.o   arduino.ar   "C:/eclipseArduino/Project/EasyIoT-Cloud/ESP8266_relay_switch_MQTT/Release/arduino.ar" -lm -lgcc -lhal -lphy -lpp -lnet80211 -lwpa -lcrypto -lmain -lwps -laxtls -lsmartconfig -lmesh -lwpa2 -llwip -Wl,--end-group  "-LC:/eclipseArduino/Project/EasyIoT-Cloud/ESP8266_relay_switch_MQTT/Release"
+./esp-mqtt/src/mqtt/mqtt.c.o:(.bss.default_private_key_len+0x0): multiple definition of `default_private_key_len'
+./libraries/ESP8266WiFi/src/WiFiClientSecure.cpp.o:(.bss.default_private_key_len+0x0): first defined here
+./esp-mqtt/src/mqtt/mqtt.c.o:(.bss.default_certificate_len+0x0): multiple definition of `default_certificate_len'
+./libraries/ESP8266WiFi/src/WiFiClientSecure.cpp.o:(.bss.default_certificate_len+0x0): first defined here
+collect2.exe: error: ld returned 1 exit status
+makefile:91: recipe for target 'ESP8266_relay_switch_MQTT.elf' failed
+make: *** [ESP8266_relay_switch_MQTT.elf] Error 1
+
+09:20:45 Build Finished (took 2s.300ms)
+

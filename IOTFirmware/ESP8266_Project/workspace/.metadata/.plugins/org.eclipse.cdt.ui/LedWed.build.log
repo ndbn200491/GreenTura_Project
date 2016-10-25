@@ -1,0 +1,61 @@
+10:09:07 **** Incremental Build of configuration Release for project LedWed ****
+"C:\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+Building target: LedWed
+Printing size:
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2/bin/xtensa-lx106-elf-size" -A "C:/eclipseArduino/LedWed/Release/LedWed.elf"
+C:/eclipseArduino/LedWed/Release/LedWed.elf  :
+section                                                                            size         addr
+.data                                                                               904   1073643520
+.rodata                                                                            3184   1073644432
+.bss                                                                              29768   1073647616
+.irom0.text                                                                      198912   1075843088
+.text                                                                             28709   1074790400
+.debug_frame                                                                      26452            0
+.debug_info                                                                      507669            0
+.debug_abbrev                                                                     66864            0
+.debug_loc                                                                       143872            0
+.debug_aranges                                                                     7968            0
+.debug_ranges                                                                     17184            0
+.debug_line                                                                      153742            0
+.debug_str                                                                        93712            0
+.comment                                                                           8920            0
+.xtensa.info                                                                         56            0
+.xt.prop._ZN11ArduinoJson16StaticJsonBufferILj200EE5allocEj                          60            0
+.xt.prop._ZTVN11ArduinoJson16StaticJsonBufferILj200EEE                               12            0
+.xt.lit._ZN13ClientContext8_s_errorEPva                                               8            0
+.xt.lit._ZN13ClientContext7_s_sentEPvP7tcp_pcbt                                       8            0
+.xt.lit._ZN13ClientContext7_s_recvEPvP7tcp_pcbP4pbufa                                 8            0
+.xt.lit._ZN13ClientContext5flushEv                                                    0            0
+.xt.lit._ZN13ClientContext5unrefEv                                                    8            0
+.xt.lit._ZN13ClientContext5writeEPKcj                                                 8            0
+.xt.lit._ZN13ClientContext8_consumeEj                                                 8            0
+.xt.prop._ZN6Stream9readBytesEPhj                                                    36            0
+.xt.prop._ZN13ClientContext8_s_errorEPva                                             36            0
+.xt.prop._ZN13ClientContext7_s_sentEPvP7tcp_pcbt                                     36            0
+.xt.prop._ZN13ClientContext7_s_recvEPvP7tcp_pcbP4pbufa                               96            0
+.xt.prop._ZN13ClientContext5flushEv                                                  60            0
+.xt.prop._ZN13ClientContext5unrefEv                                                  60            0
+.xt.prop._ZN13ClientContext5writeEPKcj                                               72            0
+.xt.prop._ZN13ClientContext8_consumeEj                                               96            0
+.xt.prop._ZTV10WiFiClient                                                            12            0
+.xt.lit._ZN11ArduinoJson9Internals4ListINS_8JsonPairEE10addNewNodeEv                  0            0
+.xt.lit._ZN11ArduinoJson9Internals4ListINS_11JsonVariantEE10addNewNodeEv              0            0
+.xt.prop._ZN11ArduinoJson9Internals19JsonBufferAllocatednwEjPNS_10JsonBufferE        48            0
+.xt.prop._ZN11ArduinoJson9Internals4ListINS_8JsonPairEE10addNewNodeEv                84            0
+.xt.prop._ZN11ArduinoJson9Internals4ListINS_11JsonVariantEE10addNewNodeEv            84            0
+.xt.lit._ZN14HardwareSerialD2Ev                                                       8            0
+.xt.lit._ZN14HardwareSerialD0Ev                                                       0            0
+.xt.prop._ZN14HardwareSerialD2Ev                                                     36            0
+.xt.prop._ZN14HardwareSerialD0Ev                                                     36            0
+.xt.prop._ZTV14HardwareSerial                                                        12            0
+.xt.prop._ZTV9IPAddress                                                              12            0
+.xt.lit._ZN5Print5writeEPKc                                                           0            0
+.xt.prop._ZN5Print5writeEPKc                                                         48            0
+Total                                                                           1288908
+
+
+Finished building target: LedWed
+ 
+
+10:09:08 Build Finished (took 972ms)
+

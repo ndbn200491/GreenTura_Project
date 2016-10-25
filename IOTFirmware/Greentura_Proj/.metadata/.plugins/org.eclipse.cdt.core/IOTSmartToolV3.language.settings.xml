@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project>
+	<configuration id="it.baeyens.arduino.core.toolChain.release.1606231299" name="Release">
+		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
+			<provider id="it.baeyens.arduino.languageSettingsProvider"/>
+		</extension>
+	</configuration>
+	<configuration id="it.baeyens.arduino.core.toolChain.release.464171660" name="Release">
+		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
+			<provider id="it.baeyens.arduino.languageSettingsProvider"/>
+		</extension>
+	</configuration>
+	<configuration id="it.baeyens.arduino.core.toolChain.release.1879149475" name="Release">
+		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
+			<provider id="it.baeyens.arduino.languageSettingsProvider"/>
+		</extension>
+	</configuration>
+	<configuration id="it.baeyens.arduino.core.toolChain.release.167446700" name="Release">
+		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
+			<provider id="it.baeyens.arduino.languageSettingsProvider"/>
+		</extension>
+	</configuration>
+	<configuration id="it.baeyens.arduino.core.toolChain.release.992284777" name="Release">
+		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
+			<provider id="it.baeyens.arduino.languageSettingsProvider"/>
+		</extension>
+	</configuration>
+	<configuration id="it.baeyens.arduino.core.toolChain.release.1532016698" name="Release">
+		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
+			<provider id="it.baeyens.arduino.languageSettingsProvider"/>
+		</extension>
+	</configuration>
+	<configuration id="it.baeyens.arduino.core.toolChain.release.1222209864" name="Release">
+		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
+			<provider id="it.baeyens.arduino.languageSettingsProvider"/>
+		</extension>
+	</configuration>
+	<configuration id="it.baeyens.arduino.core.toolChain.release.515381326" name="Release">
+		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
+			<provider id="it.baeyens.arduino.languageSettingsProvider"/>
+		</extension>
+	</configuration>
+</project>

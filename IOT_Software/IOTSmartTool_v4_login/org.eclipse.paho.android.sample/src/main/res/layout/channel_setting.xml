@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TÊN KÊNH:"
+        android:id="@+id/textView33"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/textView38"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/editText2"
+        android:layout_alignBottom="@+id/textView33"
+        android:layout_toEndOf="@+id/textView34"
+        android:layout_toRightOf="@+id/textView34"
+        android:layout_below="@+id/channel_select" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHẾ ĐỘ ĐIỀU KHIỂN:"
+        android:id="@+id/textView34"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timer_control_mode"
+        android:layout_alignTop="@+id/textView34"
+        android:layout_alignLeft="@+id/channel_select"
+        android:layout_alignStart="@+id/channel_select"
+        android:layout_alignBottom="@+id/textView34" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0. Hẹn giờ"
+        android:id="@+id/textView35"
+        android:layout_alignTop="@+id/timer_control_mode"
+        android:layout_alignLeft="@+id/textView36"
+        android:layout_alignStart="@+id/textView36" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Tuần Hoàn"
+        android:id="@+id/textView36"
+        android:layout_below="@+id/textView35"
+        android:layout_alignLeft="@+id/textView37"
+        android:layout_alignStart="@+id/textView37" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Điều khiển trực tiếp"
+        android:id="@+id/textView37"
+        android:layout_below="@+id/textView36"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHỌN KÊNH:"
+        android:id="@+id/textView38"
+        android:layout_marginTop="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_marginLeft="20dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/channel_select"
+        android:layout_alignTop="@+id/textView38"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

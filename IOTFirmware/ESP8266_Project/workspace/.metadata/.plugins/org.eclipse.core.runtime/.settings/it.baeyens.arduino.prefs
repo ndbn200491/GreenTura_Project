@@ -1,0 +1,20 @@
+714=38
+Automatically\ import\ libraries=true
+Board=Adafruit HUZZAH ESP8266
+Board\ custom\ option\ selections=Flash Mode\=\nProcessor\=\nFlash Frequency\=\nCPU Frequency\=80 MHz\nFlash Size\=4M (1M SPIFFS)\nDebug port\=\nlwIP Variant\=\nDebug Level\=\nReset Method\=\nModule\=\nUpload Speed\=115200
+Boards\ file=C\:\\eclipseArduino\\arduinoPlugin\\packages\\esp8266\\hardware\\esp8266\\2.2.0\\boards.txt
+Build\ before\ upload\ option=ASK
+FmStatus=218
+FuStatub=1076
+FuStatus=838
+JANTJE.TEMPLATE_FOLDER=
+JANTJE.TEMPLATE_USE_DEFAULT=0
+Last\ used\ Examples=C\:/eclipseArduino/arduinoPlugin/libraries/PubSubClient/2.6.0/examples/mqtt_auth
+Open\ serial\ connections\ with\ the\ monitor=true
+Private\ Library\ Path=C\:/Users/VSKYLINE/Arduino/libraries
+Private\ hardware\ Path=C\:/Users/VSKYLINE/Arduino/hardware
+Serial\ Monitor\ Last\ Used\ Line\ Ending\ index=0
+UPLOAD.PROTOCOL=Default
+Upload\ port=COM2
+eclipse.preferences.version=1
+lFsStatus=2120

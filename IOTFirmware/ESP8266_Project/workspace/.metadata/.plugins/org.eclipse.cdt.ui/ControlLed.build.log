@@ -1,0 +1,57 @@
+19:31:21 **** Incremental Build of configuration Release for project ControlLed ****
+"C:\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+Building file: ../.ino.cpp
+Starting C++ compile
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/include" "-IC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/lwip/include" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=80000000L  -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_TLS_MEM -DARDUINO=10606 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_ESP8266  -DESP8266   -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\cores\esp8266" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\variants\generic" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\libraries\ESP8266WiFi" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\libraries\ESP8266WiFi\src" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
+In file included from ../.ino.cpp:12:0:
+../ControlLed.ino:7:17: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ char* ssid_ap = "BangNguyen";
+                 ^
+../ControlLed.ino:12:12: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ char* url ="http://localhost:8888/phpPOST_Test";
+            ^
+../ControlLed.ino:13:19: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+ char* espStatus = "offline" ;
+                   ^
+../ControlLed.ino: In function 'void setup()':
+../ControlLed.ino:44:13: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+   espStatus ="online";
+             ^
+In file included from ../.ino.cpp:12:0:
+../ControlLed.ino: In function 'void loop()':
+../ControlLed.ino:268:20: error: no matching function for call to 'WiFiClient::findUntil()'
+   client.findUntil()
+                    ^
+../ControlLed.ino:268:20: note: candidates are:
+In file included from C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\cores\esp8266/HardwareSerial.h:31:0,
+                 from C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\cores\esp8266/Arduino.h:246,
+                 from ../.ino.cpp:7:
+C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\cores\esp8266/Stream.h:74:14: note: bool Stream::findUntil(const char*, const char*)
+         bool findUntil(const char *target, const char *terminator);   // as find but search ends if the terminator string is found
+              ^
+C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\cores\esp8266/Stream.h:74:14: note:   candidate expects 2 arguments, 0 provided
+C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\cores\esp8266/Stream.h:75:14: note: bool Stream::findUntil(const uint8_t*, const char*)
+         bool findUntil(const uint8_t *target, const char *terminator) {
+              ^
+C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\cores\esp8266/Stream.h:75:14: note:   candidate expects 2 arguments, 0 provided
+C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\cores\esp8266/Stream.h:79:14: note: bool Stream::findUntil(const char*, size_t, const char*, size_t)
+         bool findUntil(const char *target, size_t targetLen, const char *terminate, size_t termLen);   // as above but search ends if the terminate string is found
+              ^
+C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\cores\esp8266/Stream.h:79:14: note:   candidate expects 4 arguments, 0 provided
+C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\cores\esp8266/Stream.h:80:14: note: bool Stream::findUntil(const uint8_t*, size_t, const char*, size_t)
+         bool findUntil(const uint8_t *target, size_t targetLen, const char *terminate, size_t termLen) {
+              ^
+C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\cores\esp8266/Stream.h:80:14: note:   candidate expects 4 arguments, 0 provided
+In file included from ../.ino.cpp:12:0:
+../ControlLed.ino:270:1: error: expected ';' before '}' token
+ }
+ ^
+In file included from ../.ino.cpp:12:0:
+../ControlLed.ino:61:6: warning: unused variable 'ndString' [-Wunused-variable]
+  int ndString;
+      ^
+subdir.mk:24: recipe for target '.ino.cpp.o' failed
+make: *** [.ino.cpp.o] Error 1
+
+19:31:22 Build Finished (took 719ms)
+

@@ -1,0 +1,78 @@
+#if defined(__AVR__)
+	#include "Arduino.h"
+	#include "hardware/avr/HW_AVR_defines.h"
+#elif defined(__PIC32MX__)
+	#include "WProgram.h"
+	#include "hardware/pic32/HW_PIC32_defines.h"
+#elif defined(__arm__)
+	#include "Arduino.h"
+	#include "hardware/arm/HW_ARM_defines.h"
+#endif
+
+#include <DS1307.h>
+#include <EEPROM.h>
+#include "DHT.h"
+
+
+//#include <stdint.h>
+//#include <stdio.h>
+//#include <math.h>
+
+//#include <LiquidCrystal_I2C.h>
+#define DTH_DEBUG
+//#define ON_OFF
+#define sensor1 A0
+
+
+#define DHTPIN 33
+#define DHTTYPE DHT22
+
+#define OFF 0
+#define ON 1
+#define doser1_pin 5
+#define doser2_pin 6
+#define doser3_pin 7
+
+
+#define relay1 53
+#define relay2 51
+#define relay3 49
+
+
+
+typedef struct{
+  uint8_t pin;
+  uint32_t lastOn;
+  uint8_t doserStatus;
+  uint8_t periodTimeRun;
+}doserStruct_t;
+
+
+void readRTC(void);
+void readSerial(void);
+void readPPM(void);
+void readDHT(void);
+void readPH(void);
+void readLDR(void);
+void updateStts(void);
+void updateDoser(void);
+//extern void doserRun(doserStruct_t doser, uint32_t timeRun);
+void writeSerial(void);
+void writeEEP_R1(void);
+void writeEEP_R2(void);
+void writeEEP_R3(void);
+
+void readEEP_R1(void);
+void readEEP_R2(void);
+void readEEP_R3(void);
+
+void r1Manual(void);
+void r2Manual(void);
+void r3Manual(void);
+void r1Auto(void);
+void r2Auto(void);
+void r3Auto(void);
+
+void ctrRELAY1(void);
+void ctrRELAY2(void);
+void ctrRELAY3(void);

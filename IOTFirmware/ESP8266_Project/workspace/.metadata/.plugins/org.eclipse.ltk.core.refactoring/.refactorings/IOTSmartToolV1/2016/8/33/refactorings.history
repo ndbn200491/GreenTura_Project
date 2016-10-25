@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;IOTSmartToolV1/mqtt_esp8266.ino&apos; to &apos;IOTSmartTool.ino&apos;" description="Rename resource &apos;mqtt_esp8266.ino&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="mqtt_esp8266.ino" name="IOTSmartTool.ino" stamp="1470986548469" updateReferences="true"/>
+</session>

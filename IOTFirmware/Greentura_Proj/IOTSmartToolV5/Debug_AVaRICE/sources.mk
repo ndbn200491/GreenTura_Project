@@ -1,0 +1,93 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+INO_SRCS := 
+ASM_SRCS := 
+O_UPPER_SRCS := 
+CPP_SRCS := 
+S_UPPER_SRCS := 
+O_SRCS := 
+ELF_SRCS := 
+C_UPPER_SRCS := 
+CXX_SRCS := 
+C++_SRCS := 
+PDE_SRCS := 
+CC_SRCS := 
+AR_SRCS := 
+EEP_SRCS := 
+C_SRCS := 
+C_UPPER_DEPS := 
+PDE_DEPS := 
+C_DEPS := 
+AR := 
+EEP := 
+FLASH_IMAGE := 
+CC_DEPS := 
+AR_OBJ := 
+C++_DEPS := 
+LINK_OBJ := 
+CXX_DEPS := 
+ASM_DEPS := 
+INO_DEPS := 
+SIZEDUMMY := 
+S_UPPER_DEPS := 
+ELF := 
+CPP_DEPS := 
+
+# Every subdirectory with source files must be described here
+SUBDIRS := \
+. \
+core/core \
+core/core/libb64 \
+core/core/spiffs \
+core/core/umm_malloc \
+jsonData \
+libraries/ArduinoJson/examples/IndentedPrintExample \
+libraries/ArduinoJson/examples/JsonGeneratorExample \
+libraries/ArduinoJson/examples/JsonHttpClient \
+libraries/ArduinoJson/examples/JsonParserExample \
+libraries/ArduinoJson/examples/JsonServer \
+libraries/ArduinoJson/examples/JsonUdpBeacon \
+libraries/ArduinoJson/src/Internals \
+libraries/ArduinoJson/src \
+libraries/ArduinoJson/test \
+libraries/ArduinoJson/third-party/gtest-1.7.0/codegear \
+libraries/ArduinoJson/third-party/gtest-1.7.0/fused-src/gtest \
+libraries/ArduinoJson/third-party/gtest-1.7.0/samples \
+libraries/ArduinoJson/third-party/gtest-1.7.0/src \
+libraries/ArduinoJson/third-party/gtest-1.7.0/test \
+libraries/ArduinoJson/third-party/gtest-1.7.0/xcode/Samples/FrameworkSample \
+libraries/EEPROM \
+libraries/EEPROM/examples/eeprom_clear \
+libraries/EEPROM/examples/eeprom_read \
+libraries/EEPROM/examples/eeprom_write \
+libraries/ESP8266WebServer/examples/AdvancedWebServer \
+libraries/ESP8266WebServer/examples/FSBrowser \
+libraries/ESP8266WebServer/examples/HelloServer \
+libraries/ESP8266WebServer/examples/HttpBasicAuth \
+libraries/ESP8266WebServer/examples/SDWebServer \
+libraries/ESP8266WebServer/examples/SimpleAuthentification \
+libraries/ESP8266WebServer/examples/WebUpdate \
+libraries/ESP8266WebServer/src \
+libraries/ESP8266WiFi/examples/HTTPSRequest \
+libraries/ESP8266WiFi/examples/NTPClient \
+libraries/ESP8266WiFi/examples/WiFiAccessPoint \
+libraries/ESP8266WiFi/examples/WiFiClient \
+libraries/ESP8266WiFi/examples/WiFiClientBasic \
+libraries/ESP8266WiFi/examples/WiFiClientEvents \
+libraries/ESP8266WiFi/examples/WiFiMulti \
+libraries/ESP8266WiFi/examples/WiFiScan \
+libraries/ESP8266WiFi/examples/WiFiTelnetToSerial \
+libraries/ESP8266WiFi/examples/WiFiWebServer \
+libraries/ESP8266WiFi/src \
+libraries/PubSubClient/examples/mqtt_auth \
+libraries/PubSubClient/examples/mqtt_basic \
+libraries/PubSubClient/examples/mqtt_esp8266 \
+libraries/PubSubClient/examples/mqtt_publish_in_callback \
+libraries/PubSubClient/examples/mqtt_reconnect_nonblocking \
+libraries/PubSubClient/examples/mqtt_stream \
+libraries/PubSubClient/src \
+libraries/PubSubClient/tests/src \
+libraries/PubSubClient/tests/src/lib \
+

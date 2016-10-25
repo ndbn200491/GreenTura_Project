@@ -1,0 +1,149 @@
+09:11:16 **** Build of configuration Release for project WiFi_Button_Test ****
+"C:\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+Building file: ../.ino.cpp
+Starting C++ compile
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/include" "-IC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/lwip/include" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=80000000L  -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_TLS_MEM -DARDUINO=10606 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_ESP8266  -DESP8266   -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\cores\esp8266" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\variants\generic" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\libraries\ESP8266WebServer" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\libraries\ESP8266WebServer\src" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\libraries\ESP8266WiFi" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\libraries\ESP8266WiFi\src" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\libraries\EEPROM" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
+In file included from ../internal/ParseInternal.h:5:0,
+                 from ../internal/ParseRequest.h:25,
+                 from ../internal/ParseQuery.h:25,
+                 from ../Parse.h:40,
+                 from ../.ino.cpp:11:
+../internal/ParseUtils.h: In static member function 'static int ParseUtils::getStringFromJSON(const char*, const char*, char*, int)':
+../internal/ParseUtils.h:51:9: warning: unused variable 'escape' [-Wunused-variable]
+     int escape = 0;
+         ^
+../internal/ParseUtils.h: In static member function 'static bool ParseUtils::isSanitizedString(const String&)':
+../internal/ParseUtils.h:240:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for(k = 0; k < userData.length(); k++) {
+                                    ^
+../internal/ParseUtils.h:241:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for(i = 0; i < strlen(badChars); i++) {
+                                     ^
+In file included from ../.ino.cpp:31:0:
+../WiFi_Button_Test.ino: In function 'void eeprom_write_SSID()':
+../WiFi_Button_Test.ino:163:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0;i<ssid_conf.length();i++){
+                                    ^
+../WiFi_Button_Test.ino: In function 'void eeprom_write_Password()':
+../WiFi_Button_Test.ino:178:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0;i<pass_conf.length();i++){
+                                    ^
+../WiFi_Button_Test.ino: In function 'void eeprom_write_mobileID()':
+../WiFi_Button_Test.ino:194:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0;i<mobileID_conf.length();i++){
+                                        ^
+../WiFi_Button_Test.ino: In function 'String mac2Str(String)':
+../WiFi_Button_Test.ino:209:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for(int i = 0; i< mac.length();i++){
+                                ^
+Finished building: ../.ino.cpp
+ 
+Starting combiner
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2/bin/xtensa-lx106-elf-gcc" -g -Os -nostdlib -Wl,--no-check-sections -u call_user_start -Wl,-static "-LC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/lib" "-LC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/ld" "-Teagle.flash.4m1m.ld" -Wl,--gc-sections -Wl,-wrap,system_restart_local -Wl,-wrap,register_chipv6_phy  -o "C:/eclipseArduino/Project/WiFi_Button_Test/Release/WiFi_Button_Test.elf" -Wl,--start-group    ./.ino.cpp.o  ./libraries/ESP8266WiFi/src/ESP8266WiFi.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiAP.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiGeneric.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiMulti.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiSTA.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiScan.cpp.o ./libraries/ESP8266WiFi/src/WiFiClient.cpp.o ./libraries/ESP8266WiFi/src/WiFiClientSecure.cpp.o ./libraries/ESP8266WiFi/src/WiFiServer.cpp.o ./libraries/ESP8266WiFi/src/WiFiUdp.cpp.o  ./libraries/ESP8266WebServer/src/ESP8266WebServer.cpp.o ./libraries/ESP8266WebServer/src/Parsing.cpp.o  ./libraries/EEPROM/EEPROM.cpp.o  ./internal/zero/ParseClient.cpp.o ./internal/zero/ParsePush.cpp.o ./internal/zero/ParseResponse.cpp.o  ./internal/yun/ParseClient.cpp.o ./internal/yun/ParsePlatformSupport.cpp.o ./internal/yun/ParsePush.cpp.o ./internal/yun/ParseResponse.cpp.o  ./internal/esp8266/ParseClient.cpp.o ./internal/esp8266/ParsePush.cpp.o ./internal/esp8266/ParseResponse.cpp.o  ./internal/ParseCloudFunction.cpp.o ./internal/ParseObjectCreate.cpp.o ./internal/ParseObjectDelete.cpp.o ./internal/ParseObjectGet.cpp.o ./internal/ParseObjectUpdate.cpp.o ./internal/ParseQuery.cpp.o ./internal/ParseRequest.cpp.o ./internal/ParseTrackEvent.cpp.o  ./external/FlashStorage/FlashStorage.cpp.o   arduino.ar   "C:/eclipseArduino/Project/WiFi_Button_Test/Release/arduino.ar" -lm -lgcc -lhal -lphy -lpp -lnet80211 -lwpa -lcrypto -lmain -lwps -laxtls -lsmartconfig -lmesh -lwpa2 -llwip -Wl,--end-group  "-LC:/eclipseArduino/Project/WiFi_Button_Test/Release"
+Finished building: WiFi_Button_Test.elf
+ 
+Create eeprom image
+Finished building: WiFi_Button_Test.eep
+ 
+Create Flash image (ihex format)
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\esptool\0.4.8/esptool.exe" -eo "C:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/bootloaders/eboot/eboot.elf" -bo "C:/eclipseArduino/Project/WiFi_Button_Test/Release/WiFi_Button_Test.bin" -bm qio -bf 80 -bz 4M -bs .text -bp 4096 -ec -eo "C:/eclipseArduino/Project/WiFi_Button_Test/Release/WiFi_Button_Test.elf" -bs .irom0.text -bs .text -bs .data -bs .rodata -bc -ec
+Finished building: WiFi_Button_Test.bin
+ 
+Building target: WiFi_Button_Test
+Printing size:
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2/bin/xtensa-lx106-elf-size" -A "C:/eclipseArduino/Project/WiFi_Button_Test/Release/WiFi_Button_Test.elf"
+C:/eclipseArduino/Project/WiFi_Button_Test/Release/WiFi_Button_Test.elf  :
+section                                                                                                        size         addr
+.data                                                                                                           908   1073643520
+.rodata                                                                                                       13712   1073644432
+.bss                                                                                                          32808   1073658144
+.irom0.text                                                                                                  253264   1075843088
+.text                                                                                                         30237   1074790400
+.debug_frame                                                                                                  32372            0
+.debug_info                                                                                                  666884            0
+.debug_abbrev                                                                                                 84041            0
+.debug_loc                                                                                                   182068            0
+.debug_aranges                                                                                                 9584            0
+.debug_ranges                                                                                                 20600            0
+.debug_line                                                                                                  188717            0
+.debug_str                                                                                                    96535            0
+.comment                                                                                                       8920            0
+.xtensa.info                                                                                                     56            0
+.xt.prop._ZNSt17_Function_handlerIFvvEPS0_E9_M_invokeERKSt9_Any_data                                             36            0
+.xt.prop._ZNSt14_Function_base13_Base_managerIPFvvEE10_M_managerERSt9_Any_dataRKS4_St18_Manager_operation        72            0
+.xt.prop._ZNSt14_Function_baseD2Ev                                                                               36            0
+.xt.lit._ZN13ClientContext8_s_errorEPva                                                                           8            0
+.xt.lit._ZN13ClientContext7_s_sentEPvP7tcp_pcbt                                                                   8            0
+.xt.lit._ZN13ClientContext7_s_recvEPvP7tcp_pcbP4pbufa                                                             8            0
+.xt.lit._ZN13ClientContext5flushEv                                                                                0            0
+.xt.lit._ZN13ClientContext5unrefEv                                                                                8            0
+.xt.lit._ZN13ClientContext5writeEPKcj                                                                             8            0
+.xt.lit._ZN13ClientContext8_consumeEj                                                                             8            0
+.xt.prop._ZN6Stream9readBytesEPhj                                                                                36            0
+.xt.prop._ZN13ClientContext8_s_errorEPva                                                                         36            0
+.xt.prop._ZN13ClientContext7_s_sentEPvP7tcp_pcbt                                                                 36            0
+.xt.prop._ZN13ClientContext7_s_recvEPvP7tcp_pcbP4pbufa                                                           96            0
+.xt.prop._ZN13ClientContext5flushEv                                                                              60            0
+.xt.prop._ZN13ClientContext5unrefEv                                                                              60            0
+.xt.prop._ZN13ClientContext5writeEPKcj                                                                           72            0
+.xt.prop._ZN13ClientContext8_consumeEj                                                                           96            0
+.xt.prop._ZTV10WiFiClient                                                                                        12            0
+.xt.lit._ZN13ClientContext4readEPcj                                                                               8            0
+.xt.lit._ZN10SSLContext5unrefEv                                                                                   8            0
+.xt.lit._ZN10SSLContext8_readAllEv                                                                                8            0
+.xt.lit._ZN10SSLContext9availableEv                                                                               0            0
+.xt.prop._ZN13ClientContext4readEPcj                                                                            156            0
+.xt.prop._ZN10SSLContext5unrefEv                                                                                 48            0
+.xt.prop._ZN10SSLContext8_readAllEv                                                                              96            0
+.xt.prop._ZN10SSLContext9availableEv                                                                             60            0
+.xt.prop._ZTV16WiFiClientSecure                                                                                  12            0
+.xt.prop._ZTV10WiFiServer                                                                                        12            0
+.xt.lit._ZN14RequestHandlerD2Ev                                                                                   8            0
+.xt.lit._ZN14RequestHandlerD0Ev                                                                                   0            0
+.xt.lit._ZN22FunctionRequestHandler9canUploadE6String                                                             0            0
+.xt.lit._ZN22FunctionRequestHandler9canHandleE10HTTPMethod6String                                                 0            0
+.xt.lit._ZN22FunctionRequestHandlerD2Ev                                                                           8            0
+.xt.lit._ZN22FunctionRequestHandlerD0Ev                                                                           0            0
+.xt.lit._ZNKSt8functionIFvvEEclEv                                                                                 0            0
+.xt.lit._ZN22FunctionRequestHandler6handleER16ESP8266WebServer10HTTPMethod6String                                 0            0
+.xt.lit._ZN22FunctionRequestHandler6uploadER16ESP8266WebServer6StringR10HTTPUpload                                0            0
+.xt.prop._ZN14RequestHandlerD2Ev                                                                                 36            0
+.xt.prop._ZN14RequestHandler9canHandleE10HTTPMethod6String                                                       36            0
+.xt.prop._ZN14RequestHandler9canUploadE6String                                                                   36            0
+.xt.prop._ZN14RequestHandler6handleER16ESP8266WebServer10HTTPMethod6String                                       36            0
+.xt.prop._ZN14RequestHandler6uploadER16ESP8266WebServer6StringR10HTTPUpload                                      36            0
+.xt.prop._ZN14RequestHandlerD0Ev                                                                                 36            0
+.xt.prop._ZN22FunctionRequestHandler9canUploadE6String                                                           48            0
+.xt.prop._ZN22FunctionRequestHandler9canHandleE10HTTPMethod6String                                               36            0
+.xt.prop._ZN5Print5writeEPKcj                                                                                    36            0
+.xt.prop._ZN22FunctionRequestHandlerD2Ev                                                                         36            0
+.xt.prop._ZN22FunctionRequestHandlerD0Ev                                                                         36            0
+.xt.prop._ZNSt8functionIFvvEEC2ERKS1_                                                                            36            0
+.xt.prop._ZNKSt8functionIFvvEEclEv                                                                               48            0
+.xt.prop._ZN22FunctionRequestHandler6handleER16ESP8266WebServer10HTTPMethod6String                               48            0
+.xt.prop._ZN22FunctionRequestHandler6uploadER16ESP8266WebServer6StringR10HTTPUpload                              48            0
+.xt.prop._ZTV14RequestHandler                                                                                    12            0
+.xt.prop._ZTV22FunctionRequestHandler                                                                            12            0
+.xt.lit._ZNK6String9substringEj                                                                                   0            0
+.xt.lit._ZN16ESP8266WebServer15RequestArgumentC2Ev                                                                8            0
+.xt.prop._ZNK6String9substringEj                                                                                 36            0
+.xt.prop._ZN16ESP8266WebServer15RequestArgumentC2Ev                                                              36            0
+.xt.prop._ZTV13ParseResponse                                                                                     12            0
+.xt.prop._ZTV17ParseObjectCreate                                                                                 12            0
+.xt.prop._ZTV12ParseRequest                                                                                      12            0
+.xt.lit._ZN14HardwareSerialD2Ev                                                                                   8            0
+.xt.lit._ZN14HardwareSerialD0Ev                                                                                   0            0
+.xt.prop._ZN14HardwareSerialD2Ev                                                                                 36            0
+.xt.prop._ZN14HardwareSerialD0Ev                                                                                 36            0
+.xt.prop._ZTV14HardwareSerial                                                                                    12            0
+.xt.prop._ZTV9IPAddress                                                                                          12            0
+.xt.lit._ZN5Print5writeEPKc                                                                                       0            0
+.xt.prop._ZN5Print5writeEPKc                                                                                     48            0
+Total                                                                                                       1622706
+
+
+Finished building target: WiFi_Button_Test
+ 
+
+09:11:20 Build Finished (took 3s.295ms)
+

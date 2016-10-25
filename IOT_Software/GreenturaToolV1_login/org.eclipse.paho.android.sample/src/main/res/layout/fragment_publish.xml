@@ -1,0 +1,579 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.eclipse.paho.android.sample.activity.MessagesFragment"
+    android:layout_marginTop="56dp">
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView1"
+    android:layout_alignParentStart="true">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="800dp">
+
+    <TextView
+        android:layout_marginTop="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Timer Controller"
+        android:textAlignment="center"
+
+        android:id="@+id/timer_controller"
+        android:textSize="40dp"
+        android:textColor="@color/bright_foreground_material_light"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Automatically Controller"
+        android:id="@+id/switch_auto_control"
+        android:textColor="@color/color5"
+        android:layout_below="@+id/timer_controller"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:checked="false"
+        android:layout_marginLeft="18dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/timer1_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:weightSum="1"
+        android:layout_alignRight="@+id/divider8"
+        android:layout_alignEnd="@+id/divider8"
+        android:layout_below="@+id/on">
+
+
+        <TextView
+            android:id="@+id/timer1"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            style="@style/spinnerTextFieldLabel"
+            android:text="Prog. #1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp" />
+
+        <EditText
+            android:layout_width="30dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:lines="1"
+            android:inputType="number"
+            android:id="@+id/time1On_h"
+
+            android:layout_alignBottom="@+id/timer1"
+            android:layout_toRightOf="@+id/timer1"
+            android:layout_toEndOf="@+id/timer1" />
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="h"
+            android:id="@+id/textView2"
+            android:layout_alignBottom="@+id/timer1"
+            android:layout_toRightOf="@+id/time1On_h"
+            android:layout_toEndOf="@+id/time1On_h" />
+        <EditText
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+
+            android:numeric="integer"
+            android:ems="10"
+            android:lines="1"
+            android:id="@+id/time1On_m"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_alignBottom="@+id/timer1" />
+
+        <CheckBox
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:textSize="10dp"
+            android:id="@+id/checkBoxTime1"
+            android:checked="false"
+            android:layout_alignBottom="@+id/timer1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/textView10" />
+
+        <EditText
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:id="@+id/time1Off_h"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/time1On_m"
+            android:layout_toEndOf="@+id/time1On_m"
+            android:layout_alignBottom="@+id/timer1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="h"
+            android:id="@+id/textView10"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_toRightOf="@+id/time1Off_h"
+            android:layout_toEndOf="@+id/time1Off_h"
+            android:layout_alignBottom="@+id/timer1" />
+
+        <EditText
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:id="@+id/time1Off_m"
+            android:layout_alignTop="@+id/time1Off_h"
+            android:layout_toRightOf="@+id/textView10"
+            android:layout_toEndOf="@+id/textView10"
+            android:layout_alignBottom="@+id/timer1" />
+
+    </RelativeLayout> <!-- timer1 -->
+
+
+    <View
+        android:id="@+id/divider8"
+        style="@style/Divider"
+        android:layout_below="@+id/timer1_layout" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/timer2_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/divider8"
+        android:layout_alignRight="@+id/timer1_layout"
+
+        >
+
+        <TextView
+            android:id="@+id/timer2"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            style="@style/spinnerTextFieldLabel"
+            android:inputType="number"
+            android:text="Prog. #2"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp" />
+
+        <EditText
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/time2On_h"
+
+            android:ems="10"
+            android:lines="1"
+            android:numeric="integer"
+            android:layout_alignTop="@+id/time2On_m"
+            android:layout_toRightOf="@+id/timer2"
+            android:layout_toEndOf="@+id/timer2"
+            android:layout_alignBottom="@+id/timer2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="h"
+
+            android:id="@+id/textView11"
+            android:layout_alignBottom="@+id/timer2"
+            android:layout_toRightOf="@+id/time2On_h"
+            android:layout_toEndOf="@+id/time2On_h" />
+        <EditText
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:lines="1"
+            android:id="@+id/time2On_m"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView11"
+            android:layout_toEndOf="@+id/textView11"
+            android:layout_alignBottom="@+id/timer2" />
+
+        <EditText
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/time2Off_h"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/time2On_m"
+            android:layout_toEndOf="@+id/time2On_m"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:layout_alignBottom="@+id/timer2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="h"
+            android:id="@+id/textView12"
+            android:layout_alignBottom="@+id/timer2"
+            android:layout_toRightOf="@+id/time2Off_h"
+            android:layout_toEndOf="@+id/time2Off_h" />
+
+        <EditText
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/time2Off_m"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView12"
+            android:layout_toEndOf="@+id/textView12"
+            android:layout_alignBottom="@+id/timer2" />
+
+        <CheckBox
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="ok"
+            android:id="@+id/checkBoxTime2"
+            android:layout_alignBaseline="@+id/time2Off_m"
+            android:layout_alignBottom="@+id/timer2"
+            android:layout_alignParentRight="true"
+
+            android:checked="false" />
+    </RelativeLayout> <!-- Timer2 -->
+
+
+
+
+    <View
+        android:id="@+id/divider9"
+        style="@style/Divider"
+        android:layout_below="@+id/timer2_layout" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/timer3_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/divider9"
+        android:layout_alignRight="@+id/timer2_layout"
+        android:layout_alignEnd="@+id/timer2_layout">
+        <TextView
+            android:id="@+id/timer3"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            style="@style/spinnerTextFieldLabel"
+            android:text="Prog. #3"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp" />
+
+        <EditText
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/time3On_h"
+
+            android:ems="10"
+            android:lines="1"
+
+            android:numeric="integer"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/timer3"
+            android:layout_toEndOf="@+id/timer3"
+            android:layout_alignBottom="@+id/timer3" />  <!--  timer3_h -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="h"
+
+            android:id="@+id/textView13"
+            android:layout_alignBottom="@+id/timer3"
+            android:layout_toRightOf="@+id/time3On_h"
+            android:layout_toEndOf="@+id/time3On_h" />
+        <EditText
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+
+            android:numeric="integer"
+            android:contentDescription="0"
+
+            android:ems="10"
+            android:lines="1"
+            android:id="@+id/time3On_m"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView13"
+            android:layout_toEndOf="@+id/textView13"
+            android:layout_alignBottom="@+id/timer3" />
+        <CheckBox
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="ok"
+            android:lines="1"
+            android:id="@+id/checkBoxTime3"
+            android:checked="false"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/timer3" />
+
+        <EditText
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/time3Off_h"
+            android:inputType="number"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/time3On_m"
+            android:layout_toEndOf="@+id/time3On_m"
+            android:layout_alignBottom="@+id/timer3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="h"
+            android:id="@+id/textView14"
+            android:layout_alignBottom="@+id/timer3"
+            android:layout_toRightOf="@+id/time3Off_h"
+            android:layout_toEndOf="@+id/time3Off_h" />
+
+        <EditText
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/time3Off_m"
+            android:inputType="number"
+            android:layout_alignBottom="@+id/timer3"
+            android:layout_toRightOf="@+id/textView14"
+            android:layout_toEndOf="@+id/textView14" /><!--Timer3_m -->
+    </RelativeLayout> <!--  timer3 -->
+
+    <View
+        android:id="@+id/divider10"
+        style="@style/Divider"
+        android:layout_below="@+id/timer3_layout" /> <!-- divider-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/publish_button"
+
+        android:layout_below="@+id/ctrlBot3"
+        android:layout_alignRight="@+id/divider10"
+        android:layout_alignEnd="@+id/divider10" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manual Controller"
+        android:id="@+id/switch_manual_control"
+        android:textColor="@color/color10"
+        android:layout_below="@+id/divider10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:checked="false"
+        android:layout_marginLeft="20dp" />
+
+    <Switch
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Channel 1"
+        android:id="@+id/ctrlBot1"
+        android:textColorLink="@color/colorPrimaryDark"
+
+        android:layout_below="@+id/switch_manual_control"
+
+        android:checked="false"
+        android:layout_alignLeft="@+id/switch_manual_control"
+        android:layout_alignStart="@+id/switch_manual_control"
+        android:layout_alignRight="@+id/selectBot2"
+        android:layout_alignEnd="@+id/selectBot2" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Channel 2"
+        android:id="@+id/ctrlBot2"
+
+        android:textColorLink="@color/colorPrimaryDark"
+        android:checked="false"
+        android:layout_below="@+id/ctrlBot1"
+        android:layout_toLeftOf="@+id/bot1Stt"
+        android:layout_alignLeft="@+id/ctrlBot1"
+        android:layout_alignStart="@+id/ctrlBot1" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Channel 3"
+        android:buttonTint="@color/color4"
+        android:id="@+id/ctrlBot3"
+        android:checked="false"
+        android:layout_below="@+id/ctrlBot2"
+        android:layout_alignLeft="@+id/ctrlBot2"
+        android:layout_alignStart="@+id/ctrlBot2"
+        android:layout_toStartOf="@+id/bot2Stt"
+        android:layout_toLeftOf="@+id/bot2Stt" />
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Warning:"
+        android:textColor="@color/color4"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/retain_switch"
+        android:layout_marginLeft="20dp" />
+
+    <View
+        android:id="@+id/divider100"
+        style="@style/Divider"
+        android:layout_below="@+id/on" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Channel  1"
+        android:id="@+id/selectBot1"
+        android:background="@color/shadow_2"
+        android:checked="false"
+
+        android:layout_below="@+id/switch_auto_control"
+        android:layout_marginLeft="18dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Channel 2"
+        android:id="@+id/selectBot2"
+        android:checked="false"
+        android:background="@color/color2"
+        android:layout_below="@+id/switch_auto_control"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Channel 3"
+        android:id="@+id/selectBot3"
+
+        android:checked="false"
+        android:background="@color/color3"
+        android:layout_above="@+id/off"
+        android:layout_alignRight="@+id/divider100"
+        android:layout_alignEnd="@+id/divider100"
+        android:layout_marginRight="8dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retain"
+        android:id="@+id/retain_switch"
+        android:checked="true"
+        android:layout_below="@+id/publish_button"
+        android:layout_alignLeft="@+id/ctrlBot3"
+        android:layout_alignStart="@+id/ctrlBot3"
+        android:layout_alignRight="@+id/ctrlBot3"
+        android:layout_alignEnd="@+id/ctrlBot3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="     ON"
+        android:id="@+id/on"
+        android:layout_below="@+id/selectBot2"
+        android:layout_toRightOf="@+id/selectBot1"
+        android:layout_toEndOf="@+id/selectBot1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="OFF"
+        android:id="@+id/off"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_toLeftOf="@+id/publish_button"
+        android:layout_toStartOf="@+id/publish_button"
+        android:layout_above="@+id/timer1_layout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textSize="18dp"
+        android:id="@+id/bot1Stt"
+        android:layout_alignBottom="@+id/ctrlBot1"
+        android:layout_toRightOf="@+id/ctrlBot1"
+        android:layout_toEndOf="@+id/ctrlBot1"
+        android:layout_below="@+id/switch_manual_control" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Status"
+        android:id="@+id/bot2Stt"
+        android:layout_above="@+id/ctrlBot3"
+        android:layout_toRightOf="@+id/ctrlBot2"
+        android:layout_toEndOf="@+id/ctrlBot2"
+        android:layout_alignTop="@+id/ctrlBot2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Status"
+        android:id="@+id/bot3Stt"
+        android:layout_alignBottom="@+id/ctrlBot3"
+        android:layout_toRightOf="@+id/ctrlBot3"
+        android:layout_toEndOf="@+id/ctrlBot3"
+        android:layout_below="@+id/ctrlBot2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Final Setup"
+        android:id="@+id/logCtrlViewBtn"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_toEndOf="@+id/retain_switch"
+        android:layout_toRightOf="@+id/retain_switch" />
+
+</RelativeLayout>
+</ScrollView>
+
+
+</RelativeLayout>

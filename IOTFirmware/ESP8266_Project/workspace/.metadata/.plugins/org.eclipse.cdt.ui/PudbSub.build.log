@@ -1,0 +1,91 @@
+09:10:58 **** Build of configuration Release for project PudbSub ****
+"C:\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+Building file: ../.ino.cpp
+Starting C++ compile
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/include" "-IC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/lwip/include" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=80000000L    -DARDUINO=10606 -DARDUINO_ESP8266_ESP12 -DARDUINO_ARCH_ESP8266  -DESP8266   -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\cores\esp8266" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\variants\adafruit" -I"C:\eclipseArduino\arduinoPlugin\libraries\PubSubClient\2.6.0" -I"C:\eclipseArduino\arduinoPlugin\libraries\PubSubClient\2.6.0\src" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\libraries\ESP8266WiFi" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\libraries\ESP8266WiFi\src" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
+In file included from ../.ino.cpp:17:0:
+../mqtt_esp8266.ino: In function 'void callback(char*, byte*, unsigned int)':
+../mqtt_esp8266.ino:97:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < length; i++) {
+                       ^
+../mqtt_esp8266.ino: In function 'void loop()':
+../mqtt_esp8266.ino:145:49: warning: format '%ld' expects argument of type 'long int', but argument 4 has type 'int' [-Wformat=]
+     snprintf (msg, 75, "Bang Nguyen #%ld", value);
+                                                 ^
+../mqtt_esp8266.ino:145:49: warning: format '%ld' expects argument of type 'long int', but argument 4 has type 'int' [-Wformat=]
+Finished building: ../.ino.cpp
+ 
+Building file: C:/eclipseArduino/arduinoPlugin/libraries/PubSubClient/2.6.0/src/PubSubClient.cpp
+Starting C++ compile
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/include" "-IC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/lwip/include" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=80000000L    -DARDUINO=10606 -DARDUINO_ESP8266_ESP12 -DARDUINO_ARCH_ESP8266  -DESP8266   -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\cores\esp8266" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\variants\adafruit" -I"C:\eclipseArduino\arduinoPlugin\libraries\PubSubClient\2.6.0" -I"C:\eclipseArduino\arduinoPlugin\libraries\PubSubClient\2.6.0\src" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\libraries\ESP8266WiFi" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\libraries\ESP8266WiFi\src" -MMD -MP -MF"libraries/PubSubClient/src/PubSubClient.cpp.d" -MT"libraries/PubSubClient/src/PubSubClient.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "C:/eclipseArduino/arduinoPlugin/libraries/PubSubClient/2.6.0/src/PubSubClient.cpp"  -o  "libraries/PubSubClient/src/PubSubClient.cpp.o"   -Wall
+Finished building: C:/eclipseArduino/arduinoPlugin/libraries/PubSubClient/2.6.0/src/PubSubClient.cpp
+ 
+Starting combiner
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2/bin/xtensa-lx106-elf-gcc" -g -Os -nostdlib -Wl,--no-check-sections -u call_user_start -Wl,-static "-LC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/lib" "-LC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/ld" "-Teagle.flash.4m1m.ld" -Wl,--gc-sections -Wl,-wrap,system_restart_local -Wl,-wrap,register_chipv6_phy  -o "D:/Working/IOT/IOT_Firmware/ESP8266_Project/workspace/PudbSub/Release/PudbSub.elf" -Wl,--start-group    ./.ino.cpp.o  ./libraries/PubSubClient/src/PubSubClient.cpp.o  ./libraries/ESP8266WiFi/src/ESP8266WiFi.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiAP.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiGeneric.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiMulti.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiSTA.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiScan.cpp.o ./libraries/ESP8266WiFi/src/WiFiClient.cpp.o ./libraries/ESP8266WiFi/src/WiFiClientSecure.cpp.o ./libraries/ESP8266WiFi/src/WiFiServer.cpp.o ./libraries/ESP8266WiFi/src/WiFiUdp.cpp.o   arduino.ar   "D:/Working/IOT/IOT_Firmware/ESP8266_Project/workspace/PudbSub/Release/arduino.ar" -lm -lgcc -lhal -lphy -lpp -lnet80211 -lwpa -lcrypto -lmain -lwps -laxtls -lsmartconfig -lmesh -lwpa2 -llwip -Wl,--end-group  "-LD:/Working/IOT/IOT_Firmware/ESP8266_Project/workspace/PudbSub/Release"
+Finished building: PudbSub.elf
+ 
+Create eeprom image
+Finished building: PudbSub.eep
+ 
+Create Flash image (ihex format)
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\esptool\0.4.8/esptool.exe" -eo "C:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/bootloaders/eboot/eboot.elf" -bo "D:/Working/IOT/IOT_Firmware/ESP8266_Project/workspace/PudbSub/Release/PudbSub.bin" -bm qio -bf 40 -bz 4M -bs .text -bp 4096 -ec -eo "D:/Working/IOT/IOT_Firmware/ESP8266_Project/workspace/PudbSub/Release/PudbSub.elf" -bs .irom0.text -bs .text -bs .data -bs .rodata -bc -ec
+Finished building: PudbSub.bin
+ 
+Building target: PudbSub
+Printing size:
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2/bin/xtensa-lx106-elf-size" -A "D:/Working/IOT/IOT_Firmware/ESP8266_Project/workspace/PudbSub/Release/PudbSub.elf"
+D:/Working/IOT/IOT_Firmware/ESP8266_Project/workspace/PudbSub/Release/PudbSub.elf  :
+section                                                                                                                                                                                                                        size         addr
+.data                                                                                                                                                                                                                           904   1073643520
+.rodata                                                                                                                                                                                                                        1440   1073644432
+.bss                                                                                                                                                                                                                          30296   1073645872
+.irom0.text                                                                                                                                                                                                                  198000   1075843088
+.text                                                                                                                                                                                                                         28133   1074790400
+.debug_frame                                                                                                                                                                                                                  23856            0
+.debug_info                                                                                                                                                                                                                  389591            0
+.debug_abbrev                                                                                                                                                                                                                 53836            0
+.debug_loc                                                                                                                                                                                                                   137963            0
+.debug_aranges                                                                                                                                                                                                                 6936            0
+.debug_ranges                                                                                                                                                                                                                 15344            0
+.debug_line                                                                                                                                                                                                                  135227            0
+.debug_str                                                                                                                                                                                                                    71536            0
+.comment                                                                                                                                                                                                                       8920            0
+.xtensa.info                                                                                                                                                                                                                     56            0
+.xt.prop._ZNSt17_Function_handlerIFvPcPhjEPS2_E9_M_invokeERKSt9_Any_dataS0_S1_j                                                                                                                                                  36            0
+.xt.prop._ZNSt14_Function_base13_Base_managerIPFvPcPhjEE10_M_managerERSt9_Any_dataRKS6_St18_Manager_operation                                                                                                                    72            0
+.xt.prop._ZNSt14_Function_baseD2Ev                                                                                                                                                                                               36            0
+.xt.lit._ZNSt8functionIFvPcPhjEEaSIRS3_EENSt9enable_ifIXsrSt5__or_IISt7is_voidIvESt14is_convertibleIDTclcl18__callable_functorcl7declvalIRT_EEEcl7declvalIS0_EEcl7declvalIS1_EEcl7declvalIjEEEEvEEE5valueES5_E4typeEOSB_          0            0
+.xt.prop._ZNSt8functionIFvPcPhjEEC2ERKS3_                                                                                                                                                                                        36            0
+.xt.prop._ZNSt8functionIFvPcPhjEEaSIRS3_EENSt9enable_ifIXsrSt5__or_IISt7is_voidIvESt14is_convertibleIDTclcl18__callable_functorcl7declvalIRT_EEEcl7declvalIS0_EEcl7declvalIS1_EEcl7declvalIjEEEEvEEE5valueES5_E4typeEOSB_        36            0
+.xt.lit._ZN13ClientContext7_s_sentEPvP7tcp_pcbt                                                                                                                                                                                   0            0
+.xt.lit._ZN13ClientContext7_s_recvEPvP7tcp_pcbP4pbufa                                                                                                                                                                             0            0
+.xt.lit._ZN13ClientContext8_s_errorEPva                                                                                                                                                                                           0            0
+.xt.lit._ZN13ClientContext5flushEv                                                                                                                                                                                                0            0
+.xt.lit._ZN13ClientContext5unrefEv                                                                                                                                                                                                0            0
+.xt.lit._ZN13ClientContext5writeEPKcj                                                                                                                                                                                             0            0
+.xt.lit._ZN13ClientContext8_consumeEj                                                                                                                                                                                             0            0
+.xt.prop._ZN6Stream9readBytesEPhj                                                                                                                                                                                                36            0
+.xt.prop._ZN13ClientContext7_s_sentEPvP7tcp_pcbt                                                                                                                                                                                 36            0
+.xt.prop._ZN13ClientContext7_s_recvEPvP7tcp_pcbP4pbufa                                                                                                                                                                           96            0
+.xt.prop._ZN13ClientContext8_s_errorEPva                                                                                                                                                                                         36            0
+.xt.prop._ZN13ClientContext5flushEv                                                                                                                                                                                              60            0
+.xt.prop._ZN13ClientContext5unrefEv                                                                                                                                                                                              60            0
+.xt.prop._ZN13ClientContext5writeEPKcj                                                                                                                                                                                           72            0
+.xt.prop._ZN13ClientContext8_consumeEj                                                                                                                                                                                           84            0
+.xt.prop._ZTV10WiFiClient                                                                                                                                                                                                        12            0
+.xt.lit._ZN14HardwareSerialD2Ev                                                                                                                                                                                                   8            0
+.xt.lit._ZN14HardwareSerialD0Ev                                                                                                                                                                                                   0            0
+.xt.prop._ZN14HardwareSerialD2Ev                                                                                                                                                                                                 36            0
+.xt.prop._ZN14HardwareSerialD0Ev                                                                                                                                                                                                 36            0
+.xt.prop._ZTV14HardwareSerial                                                                                                                                                                                                    12            0
+.xt.prop._ZTV9IPAddress                                                                                                                                                                                                          12            0
+.xt.lit._ZN5Print5writeEPKc                                                                                                                                                                                                       0            0
+.xt.prop._ZN5Print5writeEPKc                                                                                                                                                                                                     48            0
+Total                                                                                                                                                                                                                       1102898
+
+
+Finished building target: PudbSub
+ 
+
+09:11:03 Build Finished (took 4s.598ms)
+

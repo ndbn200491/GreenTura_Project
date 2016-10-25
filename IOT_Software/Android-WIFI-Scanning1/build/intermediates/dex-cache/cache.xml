@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Working\IOT\IOT_Software\Android-WIFI-Scanning1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="d090b5011a456101aaea789d177643289df5ebb8">
+        <dex dex="D:\Working\IOT\IOT_Software\Android-WIFI-Scanning1\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_6c14c869206d72a270f4d9a9e6396ff85e44e516.jar" />
+    </item>
+    <item
+        jar="C:\Users\VSKYLINE\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="D:\Working\IOT\IOT_Software\Android-WIFI-Scanning1\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0_df0abd1641a7c35b4a39e7f9b6d3e4b9e60eaf47.jar" />
+    </item>
+    <item
+        jar="D:\Working\IOT\IOT_Software\Android-WIFI-Scanning1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="64fa92773a734358fcf99d2948109170a7bb955b">
+        <dex dex="D:\Working\IOT\IOT_Software\Android-WIFI-Scanning1\app\build\intermediates\pre-dexed\debug\instant-run_9ac2fe1626b4ed4d64bb76629133776f9dac79d2.jar" />
+    </item>
+
+</items>

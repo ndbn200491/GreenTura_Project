@@ -1,0 +1,59 @@
+11:40:58 **** Incremental Build of configuration Release for project ESP_ADCTest ****
+"C:\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+Building file: ../.ino.cpp
+Starting C++ compile
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/include" "-IC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/lwip/include" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=80000000L    -DARDUINO=10606 -DARDUINO_ESP8266_ESP12 -DARDUINO_ARCH_ESP8266  -DESP8266   -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\cores\esp8266" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\variants\adafruit" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\libraries\ESP8266WiFi" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\libraries\ESP8266WiFi\src" -I"C:\eclipseArduino\arduinoPlugin\libraries\OneWire\2.3.2" -I"C:\eclipseArduino\arduinoPlugin\libraries\DHT_sensor_library\1.2.3" -I"D:\Working\IOT\IOTFirmware\ESP8266_Project\workspace\ESP_ADCTest\ds18b20" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
+Finished building: ../.ino.cpp
+ 
+Starting combiner
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2/bin/xtensa-lx106-elf-gcc" -g -Os -nostdlib -Wl,--no-check-sections -u call_user_start -Wl,-static "-LC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/lib" "-LC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/ld" "-Teagle.flash.4m1m.ld" -Wl,--gc-sections -Wl,-wrap,system_restart_local -Wl,-wrap,register_chipv6_phy  -o "D:/Working/IOT/IOTFirmware/ESP8266_Project/workspace/ESP_ADCTest/Release/ESP_ADCTest.elf" -Wl,--start-group    ./.ino.cpp.o  ./libraries/OneWire/OneWire.cpp.o  ./libraries/ESP8266WiFi/src/ESP8266WiFi.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiAP.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiGeneric.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiMulti.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiSTA.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiScan.cpp.o ./libraries/ESP8266WiFi/src/WiFiClient.cpp.o ./libraries/ESP8266WiFi/src/WiFiClientSecure.cpp.o ./libraries/ESP8266WiFi/src/WiFiServer.cpp.o ./libraries/ESP8266WiFi/src/WiFiUdp.cpp.o  ./libraries/DHT_sensor_library/DHT.cpp.o  ./ds18b20/ds18b20.cpp.o   arduino.ar   "D:/Working/IOT/IOTFirmware/ESP8266_Project/workspace/ESP_ADCTest/Release/arduino.ar" -lm -lgcc -lhal -lphy -lpp -lnet80211 -lwpa -lcrypto -lmain -lwps -laxtls -lsmartconfig -lmesh -lwpa2 -llwip -Wl,--end-group  "-LD:/Working/IOT/IOTFirmware/ESP8266_Project/workspace/ESP_ADCTest/Release"
+Finished building: ESP_ADCTest.elf
+ 
+Create eeprom image
+Finished building: ESP_ADCTest.eep
+ 
+Create Flash image (ihex format)
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\esptool\0.4.8/esptool.exe" -eo "C:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/bootloaders/eboot/eboot.elf" -bo "D:/Working/IOT/IOTFirmware/ESP8266_Project/workspace/ESP_ADCTest/Release/ESP_ADCTest.bin" -bm qio -bf 40 -bz 4M -bs .text -bp 4096 -ec -eo "D:/Working/IOT/IOTFirmware/ESP8266_Project/workspace/ESP_ADCTest/Release/ESP_ADCTest.elf" -bs .irom0.text -bs .text -bs .data -bs .rodata -bc -ec
+Finished building: ESP_ADCTest.bin
+ 
+Building target: ESP_ADCTest
+Printing size:
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2/bin/xtensa-lx106-elf-size" -A "D:/Working/IOT/IOTFirmware/ESP8266_Project/workspace/ESP_ADCTest/Release/ESP_ADCTest.elf"
+D:/Working/IOT/IOTFirmware/ESP8266_Project/workspace/ESP_ADCTest/Release/ESP_ADCTest.elf  :
+section                                  size         addr
+.data                                     888   1073643520
+.rodata                                   984   1073644416
+.bss                                    29648   1073645400
+.irom0.text                            195872   1075843088
+.text                                   29445   1074790400
+.debug_frame                            24640            0
+.debug_info                            373032            0
+.debug_abbrev                           53699            0
+.debug_aranges                           7248            0
+.debug_ranges                           15344            0
+.debug_line                            136209            0
+.debug_str                              71069            0
+.comment                                 8920            0
+.xtensa.info                               56            0
+.xt.lit._ZN13ClientContext5flushEv          0            0
+.xt.lit._ZN13ClientContext5unrefEv          0            0
+.xt.prop._ZN6Stream9readBytesEPhj          36            0
+.xt.prop._ZN13ClientContext5flushEv        60            0
+.xt.prop._ZN13ClientContext5unrefEv        60            0
+.xt.lit._ZN14HardwareSerialD2Ev             8            0
+.xt.lit._ZN14HardwareSerialD0Ev             0            0
+.xt.prop._ZN14HardwareSerialD2Ev           36            0
+.xt.prop._ZN14HardwareSerialD0Ev           36            0
+.xt.prop._ZTV14HardwareSerial              12            0
+.xt.prop._ZTV9IPAddress                    12            0
+.xt.lit._ZN5Print5writeEPKc                 8            0
+.xt.prop._ZN5Print5writeEPKc               48            0
+.debug_loc                             134628            0
+Total                                 1081998
+
+
+Finished building target: ESP_ADCTest
+ 
+
+11:41:01 Build Finished (took 2s.683ms)
+

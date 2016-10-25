@@ -1,0 +1,7 @@
+/core/
+/external/
+/internal/
+/libraries/
+/makefile
+/objects.mk
+/sources.mk

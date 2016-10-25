@@ -1,0 +1,163 @@
+#include <ESP8266WiFi.h>
+ 
+const char* ssid = "AP_cisco";
+const char* password = "Chantroiviet@2014";
+char* last_name;
+char* first_name;
+int ledPin = 13; // GPIO13
+WiFiServer server(80);
+ 
+const int LED_PIN = 5; // Thing's onboard, green LED
+const int ANALOG_PIN = A0; // The only analog pin on the Thing
+const int DIGITAL_PIN = 12; // Digital pin to be read
+
+void setup() {
+  Serial.begin(115200);
+  delay(10);
+ 
+  pinMode(ledPin, OUTPUT);
+  digitalWrite(ledPin, LOW);
+ 
+  // Connect to WiFi network
+  Serial.println();
+  Serial.println();
+  Serial.print("Connecting to ");
+  Serial.println(ssid);
+ 
+  WiFi.begin(ssid, password);
+ 
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  Serial.println("");
+  Serial.println("WiFi connected");
+ 
+  // Start the server
+  server.begin();
+  Serial.println("Server started");
+ 
+  // Print the IP address
+  Serial.print("Use this URL to connect: ");
+  Serial.print("http://");
+  Serial.print(WiFi.localIP());
+  Serial.println("/");
+ 
+}
+ 
+void loop() {
+	int ndString;
+  // Check if a client has connected
+  WiFiClient client = server.available();
+  if (!client) {
+    return;
+  }
+
+ 
+  // Wait until the client sends some data
+  Serial.println("new client");
+  while(!client.available()){
+    delay(1);
+  }
+ 
+  // Read the first line of the request
+  String request = client.readStringUntil('\r');
+  Serial.println("looping...\n\r");
+  //Serial.println(request.c_str());
+  //client.flush();
+delay(100);
+ 
+// Match the request
+  int val = -1; // We'll use 'val' to keep track of both the
+                // request type (read/set) and value if set.
+  if (request.indexOf("/led/0") != -1)
+    val = 0; // Will write LED low
+  else if (request.indexOf("/led/1") != -1)
+    val = 1; // Will write LED high
+  else if (request.indexOf("/read") != -1)
+    val = -2; // Will print pin reads
+  // Otherwise request will be invalid. We'll say as much in HTML
+
+  // Set GPIO5 according to the request
+  if (val >= 0)
+    digitalWrite(LED_PIN, val);
+
+  client.flush();
+  // Match the request
+ 
+ /* int value = LOW;
+  if (request.indexOf("/LED=ON") != -1)  {
+    digitalWrite(ledPin, HIGH);
+    value = HIGH;
+  }
+  if (request.indexOf("/LED=OFF") != -1)  {
+    digitalWrite(ledPin, LOW);
+    value = LOW;
+  }
+  */
+
+  //ndString = request.indexOf("/fname");
+ // Serial.println("First name input:");
+ // Serial.println(ndString);
+// Set ledPin according to the request
+//digitalWrite(ledPin, value);
+  String s = "HTTP/1.1 200 OK\r\n";
+    s += "Content-Type: text/html\r\n\r\n";
+    s += "<!DOCTYPE HTML>\r\n<html>\r\n";
+
+  // Return the response
+ /* client.println("HTTP/1.1 200 OK");
+  client.println("Content-Type: text/html");
+  client.println(""); //  do not forget ths one
+  client.println("<!DOCTYPE HTML>");
+  client.println("<html>");
+ 
+  client.print("Led pin is now: ");*/
+
+ 
+    if (val >= 0)
+     {
+       s += "LED is now ";
+       s += (val)?"high":"low";
+     }
+    else if (val == -2)
+      { // If we're reading pins, print out those values:
+        s += "Analog Pin = ";
+        s += String(analogRead(ANALOG_PIN));
+        s += "<br>"; // Go to the next line.
+        s += "Digital Pin 12 = ";
+        s += String(digitalRead(DIGITAL_PIN));
+      }
+      else
+      {
+        s += "Invalid Request.<br> Try /led/1, /led/0, or /read.";
+      }
+    s += "</html>\n";
+
+    client.print(s);
+client.
+ /* if(value == HIGH) {
+    client.print("On");
+  } else {
+    client.print("Off");
+  }*/
+
+ /* client.println("<br><br>");
+  //client.println("<a href=/BangNguyen\"\"><button> Bang_nguyen</button></a>"); check for fun ,
+  client.println("<a href=\"/LED=ON\"\"><button>LedOn </button></a>");
+  client.println("<a href=\"/LED=OFF\"\"><button>LedOff </button></a><br />");
+  client.println("<a href=\"><button>BangNguyenSend</button></a><br/>");
+  client.println("<br><br>");
+  //client.println("<a href=\"/form_input\"\"><form action=\"demo_form.asp\" method=\"get\">First name: <input type=\"text\" name=\"fname\"><br>Last name: <input type=\"text\" name=\"lname\"><br><input type=\"submit\" value=\"Submit\"></form></a>");
+
+  client.println("</html>");
+  */
+
+
+  delay(1);
+  Serial.println("Client disonnected");
+  Serial.println("");
+  //Serial.println(last_name);
+  //Serial.println(first_name);
+ //:sent
+}

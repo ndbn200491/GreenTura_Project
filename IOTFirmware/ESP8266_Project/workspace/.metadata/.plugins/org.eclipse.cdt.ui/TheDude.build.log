@@ -1,0 +1,63 @@
+07:00:39 **** Incremental Build of configuration Release for project TheDude ****
+"C:\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+Building target: TheDude
+Printing size:
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2/bin/xtensa-lx106-elf-size" -A "C:/eclipseArduino/ESP8266-Water-Heater-Control/Release/TheDude.elf"
+C:/eclipseArduino/ESP8266-Water-Heater-Control/Release/TheDude.elf  :
+section                                                     size         addr
+.data                                                        908   1073643520
+.rodata                                                     3476   1073644432
+.bss                                                       29808   1073647912
+.irom0.text                                               200288   1075843088
+.text                                                      28709   1074790400
+.debug_frame                                               24856            0
+.debug_info                                               411281            0
+.debug_abbrev                                              56302            0
+.debug_loc                                                138093            0
+.debug_aranges                                              7256            0
+.debug_ranges                                              15632            0
+.debug_line                                               137673            0
+.debug_str                                                 71735            0
+.comment                                                    8920            0
+.xtensa.info                                                  56            0
+.xt.lit._ZN11dudeControl11changeStateEv                        8            0
+.xt.lit._ZN11dudeControl12getStartTimeE6String                 8            0
+.xt.lit._ZN11dudeControl10getEndTimeE6String                   8            0
+.xt.lit._ZN11dudeControl10checkStateEv                         8            0
+.xt.prop._ZN11dudeControl11changeStateEv                      36            0
+.xt.prop._ZN11dudeControl12getStartTimeE6String              156            0
+.xt.prop._ZN11dudeControl10getEndTimeE6String                156            0
+.xt.prop._ZN11dudeControl10checkStateEv                       72            0
+.xt.lit._ZN13ClientContext8_s_errorEPva                        8            0
+.xt.lit._ZN13ClientContext7_s_sentEPvP7tcp_pcbt                8            0
+.xt.lit._ZN13ClientContext7_s_recvEPvP7tcp_pcbP4pbufa          8            0
+.xt.lit._ZN13ClientContext5flushEv                             0            0
+.xt.lit._ZN13ClientContext5unrefEv                             8            0
+.xt.lit._ZN13ClientContext5writeEPKcj                          8            0
+.xt.lit._ZN13ClientContext8_consumeEj                          8            0
+.xt.prop._ZN6Stream9readBytesEPhj                             36            0
+.xt.prop._ZN13ClientContext8_s_errorEPva                      36            0
+.xt.prop._ZN13ClientContext7_s_sentEPvP7tcp_pcbt              36            0
+.xt.prop._ZN13ClientContext7_s_recvEPvP7tcp_pcbP4pbufa        96            0
+.xt.prop._ZN13ClientContext5flushEv                           60            0
+.xt.prop._ZN13ClientContext5unrefEv                           60            0
+.xt.prop._ZN13ClientContext5writeEPKcj                        72            0
+.xt.prop._ZN13ClientContext8_consumeEj                        96            0
+.xt.prop._ZTV10WiFiClient                                     12            0
+.xt.prop._ZTV10WiFiServer                                     12            0
+.xt.lit._ZN14HardwareSerialD2Ev                                8            0
+.xt.lit._ZN14HardwareSerialD0Ev                                0            0
+.xt.prop._ZN14HardwareSerialD2Ev                              36            0
+.xt.prop._ZN14HardwareSerialD0Ev                              36            0
+.xt.prop._ZTV14HardwareSerial                                 12            0
+.xt.prop._ZTV9IPAddress                                       12            0
+.xt.lit._ZN5Print5writeEPKc                                    0            0
+.xt.prop._ZN5Print5writeEPKc                                  48            0
+Total                                                    1136161
+
+
+Finished building target: TheDude
+ 
+
+07:00:41 Build Finished (took 1s.730ms)
+

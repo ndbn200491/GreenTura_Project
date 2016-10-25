@@ -1,0 +1,107 @@
+14:07:58 **** Incremental Build of configuration Release for project wifiManager ****
+"C:\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+Building target: wifiManager
+Printing size:
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2/bin/xtensa-lx106-elf-size" -A "C:/eclipseArduino/Project/WiFiManager/examples/AutoConnectWithFeedback/Release/wifiManager.elf"
+C:/eclipseArduino/Project/WiFiManager/examples/AutoConnectWithFeedback/Release/wifiManager.elf  :
+section                                                                                                                                                                      size         addr
+.data                                                                                                                                                                         924   1073643520
+.rodata                                                                                                                                                                      7648   1073644448
+.bss                                                                                                                                                                        29768   1073652096
+.irom0.text                                                                                                                                                                274637   1075843088
+.text                                                                                                                                                                       29477   1074790400
+.debug_frame                                                                                                                                                                29976            0
+.debug_info                                                                                                                                                                601554            0
+.debug_abbrev                                                                                                                                                               69697            0
+.debug_loc                                                                                                                                                                 197298            0
+.debug_aranges                                                                                                                                                               8800            0
+.debug_ranges                                                                                                                                                               19616            0
+.debug_line                                                                                                                                                                166766            0
+.debug_str                                                                                                                                                                 108983            0
+.comment                                                                                                                                                                     8920            0
+.xtensa.info                                                                                                                                                                   56            0
+.xt.lit._ZNSt14_Function_base13_Base_managerISt5_BindIFSt7_Mem_fnIM11WiFiManagerFvvEEPS3_EEE10_M_managerERSt9_Any_dataRKSB_St18_Manager_operation                               0            0
+.xt.lit._ZNSt14_Function_base13_Base_managerISt5_BindIFSt7_Mem_fnIM11WiFiManagerFvhEEPS3_bEEE10_M_managerERSt9_Any_dataRKSB_St18_Manager_operation                              0            0
+.xt.lit._ZNSt8functionIFvvEEC2ISt5_BindIFSt7_Mem_fnIM11WiFiManagerFvvEEPS5_EEvEET_                                                                                              8            0
+.xt.lit._ZNSt8functionIFvvEEC2ISt5_BindIFSt7_Mem_fnIM11WiFiManagerFvhEEPS5_bEEvEET_                                                                                             8            0
+.xt.prop._ZNK6String14StringIfHelperEv                                                                                                                                         36            0
+.xt.prop._ZNSt14_Function_base13_Base_managerISt5_BindIFSt7_Mem_fnIM11WiFiManagerFvvEEPS3_EEE10_M_managerERSt9_Any_dataRKSB_St18_Manager_operation                             84            0
+.xt.prop._ZNSt14_Function_base13_Base_managerISt5_BindIFSt7_Mem_fnIM11WiFiManagerFvhEEPS3_bEEE10_M_managerERSt9_Any_dataRKSB_St18_Manager_operation                            84            0
+.xt.prop._ZNSt17_Function_handlerIFvvESt5_BindIFSt7_Mem_fnIM11WiFiManagerFvvEEPS3_EEE9_M_invokeERKSt9_Any_data                                                                 48            0
+.xt.prop._ZNSt17_Function_handlerIFvvESt5_BindIFSt7_Mem_fnIM11WiFiManagerFvhEEPS3_bEEE9_M_invokeERKSt9_Any_data                                                                36            0
+.xt.prop._ZNSt14_Function_baseD2Ev                                                                                                                                             36            0
+.xt.prop._ZNSt8functionIFvvEEC2ISt5_BindIFSt7_Mem_fnIM11WiFiManagerFvvEEPS5_EEvEET_                                                                                            36            0
+.xt.prop._ZNSt8functionIFvvEEC2ISt5_BindIFSt7_Mem_fnIM11WiFiManagerFvhEEPS5_bEEvEET_                                                                                           36            0
+.xt.lit._ZN13ClientContext8_s_errorEPva                                                                                                                                         8            0
+.xt.lit._ZN13ClientContext7_s_sentEPvP7tcp_pcbt                                                                                                                                 8            0
+.xt.lit._ZN13ClientContext7_s_recvEPvP7tcp_pcbP4pbufa                                                                                                                           8            0
+.xt.lit._ZN13ClientContext5flushEv                                                                                                                                              0            0
+.xt.lit._ZN13ClientContext5unrefEv                                                                                                                                              8            0
+.xt.lit._ZN13ClientContext5writeEPKcj                                                                                                                                           8            0
+.xt.lit._ZN13ClientContext8_consumeEj                                                                                                                                           8            0
+.xt.prop._ZN6Stream9readBytesEPhj                                                                                                                                              36            0
+.xt.prop._ZN13ClientContext8_s_errorEPva                                                                                                                                       36            0
+.xt.prop._ZN13ClientContext7_s_sentEPvP7tcp_pcbt                                                                                                                               36            0
+.xt.prop._ZN13ClientContext7_s_recvEPvP7tcp_pcbP4pbufa                                                                                                                         96            0
+.xt.prop._ZN13ClientContext5flushEv                                                                                                                                            60            0
+.xt.prop._ZN13ClientContext5unrefEv                                                                                                                                            60            0
+.xt.prop._ZN13ClientContext5writeEPKcj                                                                                                                                         72            0
+.xt.prop._ZN13ClientContext8_consumeEj                                                                                                                                         96            0
+.xt.prop._ZTV10WiFiClient                                                                                                                                                      12            0
+.xt.prop._ZTV10WiFiServer                                                                                                                                                      12            0
+.xt.lit._ZN10UdpContext7_s_recvEPvP7udp_pcbP4pbufP7ip_addrt                                                                                                                     8            0
+.xt.lit._ZN10UdpContextC2Ev                                                                                                                                                     0            0
+.xt.lit._ZN10UdpContext5unrefEv                                                                                                                                                 8            0
+.xt.prop._ZN7WiFiUDP4readEPcj                                                                                                                                                  36            0
+.xt.prop._ZN10UdpContext7_s_recvEPvP7udp_pcbP4pbufP7ip_addrt                                                                                                                   60            0
+.xt.prop._ZN10UdpContextC2Ev                                                                                                                                                   36            0
+.xt.prop._ZN10UdpContext5unrefEv                                                                                                                                               48            0
+.xt.prop._ZTV7WiFiUDP                                                                                                                                                          12            0
+.xt.lit._ZN14RequestHandlerD2Ev                                                                                                                                                 8            0
+.xt.lit._ZN14RequestHandlerD0Ev                                                                                                                                                 0            0
+.xt.lit._ZN22FunctionRequestHandler9canUploadE6String                                                                                                                           0            0
+.xt.lit._ZN22FunctionRequestHandler9canHandleE10HTTPMethod6String                                                                                                               0            0
+.xt.lit._ZN22FunctionRequestHandlerD2Ev                                                                                                                                         8            0
+.xt.lit._ZN22FunctionRequestHandlerD0Ev                                                                                                                                         0            0
+.xt.lit._ZNKSt8functionIFvvEEclEv                                                                                                                                               0            0
+.xt.lit._ZN22FunctionRequestHandler6handleER16ESP8266WebServer10HTTPMethod6String                                                                                               0            0
+.xt.lit._ZN22FunctionRequestHandler6uploadER16ESP8266WebServer6StringR10HTTPUpload                                                                                              0            0
+.xt.lit._ZNSt8functionIFvvEEaSIRS1_EENSt9enable_ifIXsrSt5__or_IISt7is_voidIvESt14is_convertibleIDTclcl18__callable_functorcl7declvalIRT_EEEEEvEEE5valueES3_E4typeEOS9_          0            0
+.xt.prop._ZN14RequestHandlerD2Ev                                                                                                                                               36            0
+.xt.prop._ZN14RequestHandler9canHandleE10HTTPMethod6String                                                                                                                     36            0
+.xt.prop._ZN14RequestHandler9canUploadE6String                                                                                                                                 36            0
+.xt.prop._ZN14RequestHandler6handleER16ESP8266WebServer10HTTPMethod6String                                                                                                     36            0
+.xt.prop._ZN14RequestHandler6uploadER16ESP8266WebServer6StringR10HTTPUpload                                                                                                    36            0
+.xt.prop._ZN14RequestHandlerD0Ev                                                                                                                                               36            0
+.xt.prop._ZN22FunctionRequestHandler9canUploadE6String                                                                                                                         48            0
+.xt.prop._ZN22FunctionRequestHandler9canHandleE10HTTPMethod6String                                                                                                             36            0
+.xt.prop._ZN5Print5writeEPKcj                                                                                                                                                  36            0
+.xt.prop._ZN22FunctionRequestHandlerD2Ev                                                                                                                                       36            0
+.xt.prop._ZN22FunctionRequestHandlerD0Ev                                                                                                                                       36            0
+.xt.prop._ZNSt8functionIFvvEEC2ERKS1_                                                                                                                                          36            0
+.xt.prop._ZNKSt8functionIFvvEEclEv                                                                                                                                             48            0
+.xt.prop._ZN22FunctionRequestHandler6handleER16ESP8266WebServer10HTTPMethod6String                                                                                             48            0
+.xt.prop._ZN22FunctionRequestHandler6uploadER16ESP8266WebServer6StringR10HTTPUpload                                                                                            48            0
+.xt.prop._ZNSt8functionIFvvEEaSIRS1_EENSt9enable_ifIXsrSt5__or_IISt7is_voidIvESt14is_convertibleIDTclcl18__callable_functorcl7declvalIRT_EEEEEvEEE5valueES3_E4typeEOS9_        36            0
+.xt.prop._ZTV14RequestHandler                                                                                                                                                  12            0
+.xt.prop._ZTV22FunctionRequestHandler                                                                                                                                          12            0
+.xt.lit._ZNK6String9substringEj                                                                                                                                                 0            0
+.xt.lit._ZN16ESP8266WebServer15RequestArgumentC2Ev                                                                                                                              8            0
+.xt.prop._ZNK6String9substringEj                                                                                                                                               36            0
+.xt.prop._ZN16ESP8266WebServer15RequestArgumentC2Ev                                                                                                                            36            0
+.xt.lit._ZN14HardwareSerialD2Ev                                                                                                                                                 8            0
+.xt.lit._ZN14HardwareSerialD0Ev                                                                                                                                                 0            0
+.xt.prop._ZN14HardwareSerialD2Ev                                                                                                                                               36            0
+.xt.prop._ZN14HardwareSerialD0Ev                                                                                                                                               36            0
+.xt.prop._ZTV14HardwareSerial                                                                                                                                                  12            0
+.xt.prop._ZTV9IPAddress                                                                                                                                                        12            0
+.xt.lit._ZN5Print5writeEPKc                                                                                                                                                     0            0
+.xt.prop._ZN5Print5writeEPKc                                                                                                                                                   48            0
+Total                                                                                                                                                                     1556200
+
+
+Finished building target: wifiManager
+ 
+
+14:07:58 Build Finished (took 520ms)
+

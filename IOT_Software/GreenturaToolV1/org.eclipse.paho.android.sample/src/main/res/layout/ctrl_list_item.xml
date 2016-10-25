@@ -1,0 +1,250 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dip" >
+
+    <TextView
+        android:id="@+id/logCtrl123"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Channel:"
+        android:textSize="17dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toStartOf="@+id/logCtrlTimeOn1"
+        android:textColor="@color/abc_primary_text_disable_only_material_light"
+        android:layout_below="@+id/tim1"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@+id/logCtrlTimeOn1"
+        android:background="@color/button_material_light" />
+
+    <TextView
+        android:id="@+id/tim1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:gravity="center_vertical"
+        android:text="Timer Controller Program"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/abc_primary_text_disable_only_material_light"
+        android:background="@color/color5" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="26dip"
+        android:text="Time Set:"
+
+        android:textSize="15dip"
+        android:id="@+id/abc"
+        android:textColor="@color/abc_primary_text_disable_only_material_light"
+        android:layout_alignRight="@+id/tim1"
+        android:layout_alignEnd="@+id/tim1"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_alignBottom="@+id/logCtrlChanName"
+        android:textStyle="bold|italic"
+        android:layout_alignTop="@+id/logCtrlChanName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time 1 ON  "
+        android:id="@+id/textView15"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/logCtrl123"
+        android:layout_marginLeft="10dp"
+        android:layout_above="@+id/logCtrlTimeOff1"
+        android:textColor="@color/abc_primary_text_disable_only_material_light"
+        android:background="@color/accent_material_dark"
+        android:layout_alignRight="@+id/textView16"
+        android:layout_alignEnd="@+id/textView16" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time 1 OFF"
+        android:id="@+id/textView16"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/textView15"
+        android:textColor="@color/abc_primary_text_disable_only_material_light"
+        android:background="@color/color7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Packet Send:"
+        android:id="@+id/textView17"
+        android:textColor="@color/abc_primary_text_disable_only_material_light"
+        android:layout_below="@+id/textView24"
+        android:layout_alignLeft="@+id/textView24"
+        android:layout_alignStart="@+id/textView24"
+        android:textStyle="italic"
+        android:layout_toStartOf="@+id/logCtrlTimeOff3"
+        android:layout_toLeftOf="@+id/logCtrlTimeOff3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..............."
+        android:id="@+id/logCtrlTimeOn1"
+        android:layout_below="@+id/logCtrl123"
+        android:layout_toRightOf="@+id/textView15"
+        android:layout_toEndOf="@+id/textView15"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:textColor="@color/abc_primary_text_disable_only_material_light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..............."
+        android:id="@+id/logCtrlTimeOff1"
+        android:layout_below="@+id/logCtrlTimeOn1"
+        android:layout_alignLeft="@+id/logCtrlTimeOn1"
+        android:layout_alignStart="@+id/logCtrlTimeOn1"
+        android:textColor="@color/abc_primary_text_disable_only_material_light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="............................................................."
+        android:id="@+id/logMessageSend"
+        android:layout_alignBottom="@+id/textView17"
+        android:textColor="@color/abc_primary_text_disable_only_material_light"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textView17"
+        android:layout_toEndOf="@+id/textView17"
+        android:layout_below="@+id/logCtrlTimeOff3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=".............."
+        android:id="@+id/logCtrlChanName"
+        android:layout_alignTop="@+id/logCtrl123"
+        android:layout_alignLeft="@+id/logCtrlTimeOn1"
+        android:layout_alignStart="@+id/logCtrlTimeOn1"
+        android:textColor="@color/abc_primary_text_disable_only_material_light"
+        android:textStyle="bold"
+        android:layout_below="@+id/logCtrl123"
+        android:layout_above="@+id/logCtrlTimeOn1"
+        android:textSize="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:id="@+id/logCtrlTim"
+        android:textColor="@color/abc_primary_text_disable_only_material_light"
+        android:layout_below="@+id/abc"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/abc"
+        android:layout_alignStart="@+id/abc"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time 2 ON "
+        android:id="@+id/textView18"
+        android:layout_below="@+id/textView16"
+        android:layout_alignLeft="@+id/textView16"
+        android:layout_alignStart="@+id/textView16"
+        android:layout_alignRight="@+id/textView16"
+        android:layout_alignEnd="@+id/textView16"
+        android:textColor="@color/abc_primary_text_disable_only_material_light"
+        android:background="@color/accent_material_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..............."
+        android:id="@+id/logCtrlTimeOn2"
+        android:layout_below="@+id/logCtrlTimeOff1"
+        android:layout_alignLeft="@+id/logCtrlTimeOff1"
+        android:layout_alignStart="@+id/logCtrlTimeOff1"
+        android:textColor="@color/abc_primary_text_disable_only_material_light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time 2 OFF"
+        android:id="@+id/textView20"
+        android:layout_below="@+id/textView18"
+        android:layout_alignLeft="@+id/textView18"
+        android:layout_alignStart="@+id/textView18"
+        android:textColor="@color/abc_primary_text_disable_only_material_light"
+        android:background="@color/color7"
+        android:layout_toLeftOf="@+id/logCtrlTimeOn1"
+        android:layout_toStartOf="@+id/logCtrlTimeOn1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..............."
+        android:id="@+id/logCtrlTimeOff2"
+        android:layout_below="@+id/logCtrlTimeOn2"
+        android:layout_alignLeft="@+id/logCtrlTimeOn2"
+        android:layout_alignStart="@+id/logCtrlTimeOn2"
+        android:textColor="@color/abc_primary_text_disable_only_material_light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time 3 ON"
+        android:id="@+id/textView22"
+        android:layout_below="@+id/textView20"
+        android:layout_alignLeft="@+id/textView20"
+        android:layout_alignStart="@+id/textView20"
+        android:textColor="@color/abc_primary_text_disable_only_material_light"
+        android:background="@color/accent_material_dark"
+        android:layout_alignRight="@+id/textView18"
+        android:layout_alignEnd="@+id/textView18" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..............."
+        android:id="@+id/logCtrlTimeOn3"
+        android:layout_below="@+id/logCtrlTimeOff2"
+        android:layout_alignLeft="@+id/logCtrlTimeOff2"
+        android:layout_alignStart="@+id/logCtrlTimeOff2"
+        android:textColor="@color/abc_primary_text_disable_only_material_light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time 3 OFF"
+        android:id="@+id/textView24"
+        android:layout_below="@+id/textView22"
+        android:layout_alignLeft="@+id/textView22"
+        android:layout_alignStart="@+id/textView22"
+        android:textColor="@color/abc_primary_text_disable_only_material_light"
+        android:background="@color/color7"
+        android:layout_toLeftOf="@+id/logCtrlTimeOn1"
+        android:layout_toStartOf="@+id/logCtrlTimeOn1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..............."
+        android:id="@+id/logCtrlTimeOff3"
+        android:layout_below="@+id/logCtrlTimeOn3"
+        android:layout_alignLeft="@+id/logCtrlTimeOn3"
+        android:layout_alignStart="@+id/logCtrlTimeOn3"
+        android:textColor="@color/abc_primary_text_disable_only_material_light" />
+
+
+</RelativeLayout>

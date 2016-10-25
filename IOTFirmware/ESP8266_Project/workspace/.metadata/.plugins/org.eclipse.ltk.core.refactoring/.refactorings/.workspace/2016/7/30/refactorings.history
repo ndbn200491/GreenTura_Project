@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;PudbSub_test/jsonData&apos;" deleteContents="false" description="Delete resource &apos;PudbSub_test/jsonData&apos;" element1="/PudbSub_test/jsonData" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1469156512271"/>
+</session>

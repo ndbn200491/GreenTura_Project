@@ -1,0 +1,70 @@
+09:48:52 **** Incremental Build of configuration Release for project ESP8266_DS18B20_temperature_sensor_REST ****
+"C:\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+Building file: ../.ino.cpp
+Starting C++ compile
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2/bin/xtensa-lx106-elf-g++" -D__ets__ -DICACHE_FLASH -U__STRICT_ANSI__ "-IC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/include" "-IC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/lwip/include" -c -Os -g -mlongcalls -mtext-section-literals -fno-exceptions -fno-rtti -falign-functions=4 -std=c++11 -MMD -ffunction-sections -fdata-sections -DF_CPU=80000000L  -DDEBUG_ESP_PORT=Serial -DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_TLS_MEM -DARDUINO=10606 -DARDUINO_ESP8266_ESP01 -DARDUINO_ARCH_ESP8266  -DESP8266   -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\cores\esp8266" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\variants\generic" -I"C:\eclipseArduino\arduinoPlugin\libraries\OneWire\2.3.2" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\libraries\ESP8266WiFi" -I"C:\eclipseArduino\arduinoPlugin\packages\esp8266\hardware\esp8266\2.2.0\libraries\ESP8266WiFi\src" -I"C:\eclipseArduino\Project\EasyIoT-Cloud\libraries\DallasTemperature" -MMD -MP -MF".ino.cpp.d" -MT".ino.cpp.o" -D__IN_ECLIPSE__=1 -x c++ "../.ino.cpp"  -o  ".ino.cpp.o"   -Wall
+Finished building: ../.ino.cpp
+ 
+Starting combiner
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2/bin/xtensa-lx106-elf-gcc" -g -Os -nostdlib -Wl,--no-check-sections -u call_user_start -Wl,-static "-LC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/lib" "-LC:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/tools/sdk/ld" "-Teagle.flash.4m1m.ld" -Wl,--gc-sections -Wl,-wrap,system_restart_local -Wl,-wrap,register_chipv6_phy  -o "C:/eclipseArduino/Project/EasyIoT-Cloud/ESP8266_DS18B20_temperature_sensor_REST/Release/ESP8266_DS18B20_temperature_sensor_REST.elf" -Wl,--start-group    ./.ino.cpp.o  ./libraries/OneWire/OneWire.cpp.o  ./libraries/ESP8266WiFi/src/ESP8266WiFi.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiAP.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiGeneric.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiMulti.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiSTA.cpp.o ./libraries/ESP8266WiFi/src/ESP8266WiFiScan.cpp.o ./libraries/ESP8266WiFi/src/WiFiClient.cpp.o ./libraries/ESP8266WiFi/src/WiFiClientSecure.cpp.o ./libraries/ESP8266WiFi/src/WiFiServer.cpp.o ./libraries/ESP8266WiFi/src/WiFiUdp.cpp.o  ./DallasTemperature/DallasTemperature.cpp.o   arduino.ar   "C:/eclipseArduino/Project/EasyIoT-Cloud/ESP8266_DS18B20_temperature_sensor_REST/Release/arduino.ar" -lm -lgcc -lhal -lphy -lpp -lnet80211 -lwpa -lcrypto -lmain -lwps -laxtls -lsmartconfig -lmesh -lwpa2 -llwip -Wl,--end-group  "-LC:/eclipseArduino/Project/EasyIoT-Cloud/ESP8266_DS18B20_temperature_sensor_REST/Release"
+Finished building: ESP8266_DS18B20_temperature_sensor_REST.elf
+ 
+Create eeprom image
+Finished building: ESP8266_DS18B20_temperature_sensor_REST.eep
+ 
+Create Flash image (ihex format)
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\esptool\0.4.8/esptool.exe" -eo "C:/eclipseArduino/arduinoPlugin/packages/esp8266/hardware/esp8266/2.2.0/bootloaders/eboot/eboot.elf" -bo "C:/eclipseArduino/Project/EasyIoT-Cloud/ESP8266_DS18B20_temperature_sensor_REST/Release/ESP8266_DS18B20_temperature_sensor_REST.bin" -bm qio -bf 80 -bz 4M -bs .text -bp 4096 -ec -eo "C:/eclipseArduino/Project/EasyIoT-Cloud/ESP8266_DS18B20_temperature_sensor_REST/Release/ESP8266_DS18B20_temperature_sensor_REST.elf" -bs .irom0.text -bs .text -bs .data -bs .rodata -bc -ec
+Finished building: ESP8266_DS18B20_temperature_sensor_REST.bin
+ 
+Building target: ESP8266_DS18B20_temperature_sensor_REST
+Printing size:
+"C:\eclipseArduino\arduinoPlugin\tools\esp8266\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2/bin/xtensa-lx106-elf-size" -A "C:/eclipseArduino/Project/EasyIoT-Cloud/ESP8266_DS18B20_temperature_sensor_REST/Release/ESP8266_DS18B20_temperature_sensor_REST.elf"
+C:/eclipseArduino/Project/EasyIoT-Cloud/ESP8266_DS18B20_temperature_sensor_REST/Release/ESP8266_DS18B20_temperature_sensor_REST.elf  :
+section                                                     size         addr
+.data                                                        892   1073643520
+.rodata                                                     3144   1073644416
+.bss                                                       29776   1073647560
+.irom0.text                                               200992   1075843088
+.text                                                      30313   1074790400
+.debug_frame                                               26480            0
+.debug_info                                               421940            0
+.debug_abbrev                                              58251            0
+.debug_loc                                                141948            0
+.debug_aranges                                              7768            0
+.debug_ranges                                              16576            0
+.debug_line                                               142409            0
+.debug_str                                                 75070            0
+.comment                                                    8920            0
+.xtensa.info                                                  56            0
+.xt.lit._ZN13ClientContext8_s_errorEPva                        8            0
+.xt.lit._ZN13ClientContext7_s_sentEPvP7tcp_pcbt                8            0
+.xt.lit._ZN13ClientContext7_s_recvEPvP7tcp_pcbP4pbufa          8            0
+.xt.lit._ZN13ClientContext5flushEv                             0            0
+.xt.lit._ZN13ClientContext5unrefEv                             8            0
+.xt.lit._ZN13ClientContext5writeEPKcj                          8            0
+.xt.lit._ZN13ClientContext8_consumeEj                          8            0
+.xt.prop._ZN6Stream9readBytesEPhj                             36            0
+.xt.prop._ZN13ClientContext8_s_errorEPva                      36            0
+.xt.prop._ZN13ClientContext7_s_sentEPvP7tcp_pcbt              36            0
+.xt.prop._ZN13ClientContext7_s_recvEPvP7tcp_pcbP4pbufa        96            0
+.xt.prop._ZN13ClientContext5flushEv                           60            0
+.xt.prop._ZN13ClientContext5unrefEv                           60            0
+.xt.prop._ZN13ClientContext5writeEPKcj                        72            0
+.xt.prop._ZN13ClientContext8_consumeEj                        96            0
+.xt.prop._ZTV10WiFiClient                                     12            0
+.xt.lit._ZN14HardwareSerialD2Ev                                8            0
+.xt.lit._ZN14HardwareSerialD0Ev                                0            0
+.xt.prop._ZN14HardwareSerialD2Ev                              36            0
+.xt.prop._ZN14HardwareSerialD0Ev                              36            0
+.xt.prop._ZTV14HardwareSerial                                 12            0
+.xt.prop._ZTV9IPAddress                                       12            0
+.xt.lit._ZN5Print5writeEPKc                                    0            0
+.xt.prop._ZN5Print5writeEPKc                                  48            0
+Total                                                    1165239
+
+
+Finished building target: ESP8266_DS18B20_temperature_sensor_REST
+ 
+
+09:48:55 Build Finished (took 3s.12ms)
+

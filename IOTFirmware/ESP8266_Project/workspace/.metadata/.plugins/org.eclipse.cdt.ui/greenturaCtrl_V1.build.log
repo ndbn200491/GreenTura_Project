@@ -1,0 +1,27 @@
+13:10:30 **** Incremental Build of configuration Release for project greenturaCtrl_V1 ****
+"C:\\eclipseArduino\\arduinoPlugin\\tools\\make\\make" all 
+Building target: greenturaCtrl_V1
+Printing size:
+"C:\eclipseArduino\arduinoPlugin\tools\arduino\avr-gcc\4.8.1-arduino5/bin/avr-size" -A "D:/Working/IOT/IOTFirmware/greenturaCtrl_V1/Release/greenturaCtrl_V1.elf"
+D:/Working/IOT/IOTFirmware/greenturaCtrl_V1/Release/greenturaCtrl_V1.elf  :
+section            size      addr
+.data               216   8389120
+.text             12286         0
+.bss                770   8389336
+.comment             17         0
+.debug_aranges     5504         0
+.debug_info      311515         0
+.debug_abbrev     39832         0
+.debug_line       44539         0
+.debug_frame      20096         0
+.debug_str        51899         0
+.debug_loc       122177         0
+.debug_ranges      6792         0
+Total            615643
+
+
+Finished building target: greenturaCtrl_V1
+ 
+
+13:10:31 Build Finished (took 824ms)
+

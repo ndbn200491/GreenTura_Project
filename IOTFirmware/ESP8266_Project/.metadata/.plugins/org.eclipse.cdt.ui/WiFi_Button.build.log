@@ -1,0 +1,42 @@
+15:14:07 **** Incremental Build of configuration Release for project WiFi_Button ****
+"D:\\Download\\V3.1_win64.2016-08-03_16-31-05\\sloeber\\arduinoPlugin\\tools\\make\\make" all 
+Starting combiner
+"D:\Download\V3.1_win64.2016-08-03_16-31-05\sloeber\arduinoPlugin\tools\esp8266\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2/bin/xtensa-lx106-elf-gcc" -g -Os -nostdlib -Wl,--no-check-sections -u call_user_start -Wl,-static "-LD:/Download/V3.1_win64.2016-08-03_16-31-05/sloeber/arduinoPlugin/packages/esp8266/hardware/esp8266/2.1.0/tools/sdk/lib" "-LD:/Download/V3.1_win64.2016-08-03_16-31-05/sloeber/arduinoPlugin/packages/esp8266/hardware/esp8266/2.1.0/tools/sdk/ld" "-Teagle.flash.4m.ld" -Wl,--gc-sections -Wl,-wrap,system_restart_local -Wl,-wrap,register_chipv6_phy -o "D:/Working/IOT/IOTFirmware/ESP8266_Project/WiFi_Button/Release/WiFi_Button.elf" -Wl,--start-group   .\.ino.cpp.o  .\libraries\ESP8266WiFi\src\ESP8266WiFi.cpp.o .\libraries\ESP8266WiFi\src\ESP8266WiFiAP.cpp.o .\libraries\ESP8266WiFi\src\ESP8266WiFiGeneric.cpp.o .\libraries\ESP8266WiFi\src\ESP8266WiFiMulti.cpp.o .\libraries\ESP8266WiFi\src\ESP8266WiFiSTA.cpp.o .\libraries\ESP8266WiFi\src\ESP8266WiFiScan.cpp.o .\libraries\ESP8266WiFi\src\WiFiClient.cpp.o .\libraries\ESP8266WiFi\src\WiFiClientSecure.cpp.o .\libraries\ESP8266WiFi\src\WiFiServer.cpp.o .\libraries\ESP8266WiFi\src\WiFiUdp.cpp.o  .\libraries\ESP8266WebServer\src\ESP8266WebServer.cpp.o .\libraries\ESP8266WebServer\src\Parsing.cpp.o  .\libraries\EEPROM\EEPROM.cpp.o  .\internal\zero\ParseClient.cpp.o .\internal\zero\ParsePush.cpp.o .\internal\zero\ParseResponse.cpp.o  .\internal\yun\ParseClient.cpp.o .\internal\yun\ParsePlatformSupport.cpp.o .\internal\yun\ParsePush.cpp.o .\internal\yun\ParseResponse.cpp.o  .\internal\esp8266\ParseClient.cpp.o .\internal\esp8266\ParsePush.cpp.o .\internal\esp8266\ParseResponse.cpp.o  .\internal\ParseCloudFunction.cpp.o .\internal\ParseObjectCreate.cpp.o .\internal\ParseObjectDelete.cpp.o .\internal\ParseObjectGet.cpp.o .\internal\ParseObjectUpdate.cpp.o .\internal\ParseQuery.cpp.o .\internal\ParseRequest.cpp.o .\internal\ParseTrackEvent.cpp.o  .\external\FlashStorage\FlashStorage.cpp.o   arduino.ar  "D:/Working/IOT/IOTFirmware/ESP8266_Project/WiFi_Button/Release/arduino.ar" -lm -lgcc -lhal -lphy -lpp -lnet80211 -llwip -lwpa -lcrypto -lmain -lwps -laxtls -lsmartconfig -lmesh -lwpa2 -Wl,--end-group "-LD:/Working/IOT/IOTFirmware/ESP8266_Project/WiFi_Button/Release"
+xtensa-lx106-elf-gcc.exe: error: ..ino.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .librariesESP8266WiFisrcESP8266WiFi.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .librariesESP8266WiFisrcESP8266WiFiAP.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .librariesESP8266WiFisrcESP8266WiFiGeneric.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .librariesESP8266WiFisrcESP8266WiFiMulti.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .librariesESP8266WiFisrcESP8266WiFiSTA.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .librariesESP8266WiFisrcESP8266WiFiScan.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .librariesESP8266WiFisrcWiFiClient.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .librariesESP8266WiFisrcWiFiClientSecure.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .librariesESP8266WiFisrcWiFiServer.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .librariesESP8266WiFisrcWiFiUdp.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .librariesESP8266WebServersrcESP8266WebServer.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .librariesESP8266WebServersrcParsing.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .librariesEEPROMEEPROM.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .internalzeroParseClient.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .internalzeroParsePush.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .internalzeroParseResponse.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .internalyunParseClient.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .internalyunParsePlatformSupport.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .internalyunParsePush.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .internalyunParseResponse.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .internalesp8266ParseClient.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .internalesp8266ParsePush.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .internalesp8266ParseResponse.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .internalParseCloudFunction.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .internalParseObjectCreate.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .internalParseObjectDelete.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .internalParseObjectGet.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .internalParseObjectUpdate.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .internalParseQuery.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .internalParseRequest.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .internalParseTrackEvent.cpp.o: No such file or directory
+xtensa-lx106-elf-gcc.exe: error: .externalFlashStorageFlashStorage.cpp.o: No such file or directory
+make: *** [WiFi_Button.elf] Error 1
+makefile:90: recipe for target 'WiFi_Button.elf' failed
+
+15:14:07 Build Finished (took 640ms)
+

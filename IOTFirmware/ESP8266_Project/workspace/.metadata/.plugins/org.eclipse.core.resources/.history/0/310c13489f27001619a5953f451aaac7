@@ -1,0 +1,5 @@
+/core/
+/esp-mqtt/
+/libraries/
+/makefile
+/objects.mk

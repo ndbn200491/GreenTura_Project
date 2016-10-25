@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Working\IOT\IOT_Software\Radial-Menu-Widget-Android\app\libs\radial-menu-v4.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="5d8365e03c7b428815d3d8584332b1df298cbb9c">
+        <dex dex="D:\Working\IOT\IOT_Software\Radial-Menu-Widget-Android\app\build\intermediates\pre-dexed\debug\radial-menu-v4_11958979baa8c2426b8ac1a0fb3e81c05d05de1c.jar" />
+    </item>
+    <item
+        jar="C:\Users\VSKYLINE\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="D:\Working\IOT\IOT_Software\Radial-Menu-Widget-Android\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0_df0abd1641a7c35b4a39e7f9b6d3e4b9e60eaf47.jar" />
+    </item>
+    <item
+        jar="D:\Working\IOT\IOT_Software\Radial-Menu-Widget-Android\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="340721b04cc99fcd5d207dba9844a3ec15958daa">
+        <dex dex="D:\Working\IOT\IOT_Software\Radial-Menu-Widget-Android\app\build\intermediates\pre-dexed\debug\instant-run_f4d363563dd327482bc926c1e03f0833fafb6a3b.jar" />
+    </item>
+    <item
+        jar="D:\Working\IOT\IOT_Software\Radial-Menu-Widget-Android\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="d78d3d7eb385a0b3a5ad807fa5969471f807a056">
+        <dex dex="D:\Working\IOT\IOT_Software\Radial-Menu-Widget-Android\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_345f142041129de9e378bc64e63c0185a7ccc8c8.jar" />
+    </item>
+
+</items>
