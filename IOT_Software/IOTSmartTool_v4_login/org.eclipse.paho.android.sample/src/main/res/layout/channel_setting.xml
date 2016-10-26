@@ -8,40 +8,41 @@
         android:layout_height="wrap_content"
         android:text="TÊN KÊNH:"
         android:id="@+id/textView33"
-        android:layout_marginTop="19dp"
-        android:layout_below="@+id/textView38"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="20dp" />
+        android:layout_above="@+id/channel_select"
+        android:layout_alignLeft="@+id/textView38"
+        android:layout_alignStart="@+id/textView38"
+        android:layout_marginBottom="27dp" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/editText2"
         android:layout_alignBottom="@+id/textView33"
-        android:layout_toEndOf="@+id/textView34"
-        android:layout_toRightOf="@+id/textView34"
-        android:layout_below="@+id/channel_select" />
+        android:layout_toRightOf="@+id/textView38"
+        android:layout_toEndOf="@+id/textView38"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CHẾ ĐỘ ĐIỀU KHIỂN:"
         android:id="@+id/textView34"
-        android:layout_marginTop="19dp"
-        android:layout_below="@+id/editText2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="20dp" />
+        android:layout_marginTop="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView38"
+        android:layout_alignStart="@+id/textView38" />
 
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/timer_control_mode"
-        android:layout_alignTop="@+id/textView34"
         android:layout_alignLeft="@+id/channel_select"
         android:layout_alignStart="@+id/channel_select"
-        android:layout_alignBottom="@+id/textView34" />
+        android:layout_alignBottom="@+id/textView34"
+        android:layout_alignTop="@+id/textView34"
+        android:layout_alignRight="@+id/channel_select"
+        android:layout_alignEnd="@+id/channel_select" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -77,11 +78,12 @@
         android:layout_height="wrap_content"
         android:text="CHỌN KÊNH:"
         android:id="@+id/textView38"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="false"
-        android:layout_marginLeft="20dp" />
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp" />
 
     <Spinner
         android:layout_width="wrap_content"
@@ -89,5 +91,18 @@
         android:id="@+id/channel_select"
         android:layout_alignTop="@+id/textView38"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="CÀI ĐẶT CÁC KÊNH"
+        android:id="@+id/textView39"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView33"
+        android:layout_alignStart="@+id/textView33"
+        android:layout_alignRight="@+id/textView35"
+        android:layout_alignEnd="@+id/textView35"
+        android:textStyle="bold"
+        android:textAlignment="center" />
 
 </RelativeLayout>
