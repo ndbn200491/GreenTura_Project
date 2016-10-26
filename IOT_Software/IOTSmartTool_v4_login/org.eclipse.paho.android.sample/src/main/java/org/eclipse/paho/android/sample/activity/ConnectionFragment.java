@@ -412,7 +412,7 @@ public class ConnectionFragment extends Fragment {
                 dialog.cancel();
             }
         });
-
+// bang nguyen checking
         // Continous
         AlertDialog alert =  alertDialogBuilder.create();
 
