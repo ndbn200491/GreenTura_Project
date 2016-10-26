@@ -413,6 +413,7 @@ public class ConnectionFragment extends Fragment {
             }
         });
 // bang nguyen checking
+        // show the new page to setting
         // Continous
         AlertDialog alert =  alertDialogBuilder.create();
 
